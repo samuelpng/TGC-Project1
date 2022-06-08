@@ -1,5 +1,5 @@
 const BASE_API_URL = "https://api.foursquare.com/v3/";
-
+const ONEMAP_API_URL = 'https://developers.onemap.sg/'
 const API_KEY = "fsq3ZLL+c1Vg6ZJA6vK3P9nfJRqhGcXBSgnpIHruQiv9Wkc=";
 
 const headers ={
@@ -14,7 +14,7 @@ async function indEnt() {
     let response = await axios.get(url,{
         'params':{
             'll': '1.3521,103.8198',
-            'categories': '10015,10022,10018,10021',
+            'categories': '10015,10006,10018',
             'limit':50,
             'radius': 10000
         },
@@ -26,5 +26,17 @@ async function indEnt() {
     console.log(response.data)
     return response.data
 }
-indEnt()
+
+
+
+
+async function Search(searchQuery){
+    let response = await axios.get(ONEMAP_API_URL + `commonapi/search?searchVal=${searchQuery}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
+    console.log(response)
+    return response
+
+}
+
+
+
 
