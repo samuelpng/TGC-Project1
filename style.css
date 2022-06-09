@@ -1,3 +1,25 @@
-#map{
+#map {
     height: 80vh;
+}
+
+/* #map-container {
+    position: relative
+} */
+
+#search-container {
+    position: absolute;
+    z-index: 314159;
+    top: 16px;
+    left: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px
+}
+
+#results {
+    overflow-y: scroll;
+    max-height:400px
+}
+
+.search-result {
+    margin: 10px;
 }

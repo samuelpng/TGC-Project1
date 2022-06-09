@@ -3,7 +3,7 @@ function createMap(lat,lng){
     let map =L.map("map");
 
     //center of map and zoom
-    map.setView([lat,lng], 13)
+    map.setView([lat,lng], 12)
 
     var basemap = L.tileLayer('https://maps-{s}.onemap.sg/v3/Default/{z}/{x}/{y}.png', {
             detectRetina: true,
@@ -23,59 +23,64 @@ function createMap(lat,lng){
     return map;
 }
 
-async function escapeRoomGroup(){
-let escapeRoomGroup = L.layerGroup();
-let locations = await indEnt();
-for (let result of locations.results){
-    if (result.categories[0].name == 'Escape Room'){
-    L.icon({
-        iconUrl: '../pictures/escape.png',
+// async function escapeRoomGroup(){
+// let escapeRoomGroup = L.layerGroup();
+// let locations = await indEnt();
+// for (let result of locations.results){
+//     let lat = result.geocodes.main.latitude;
+//     let lng = result.geocodes.main.longitude;
+//     if (result.categories[0].name == 'Escape Room'){
+    const ecapeRoomIcon = L.icon({
+        iconUrl: '../pictures/escape.png', 
+        iconSize: [40,40],
+        iconAnchor: [22,94],
+        popupAnchor: [-3,-76]
+    })
+// .addTo(escapeRoomGroup)
+//     return escapeRoomGroup
+//     }
+//     }
+// }
+
+// async function bowlingAlley(){
+//     let bowlingAlleyGroup = L.layerGroup();
+//     let locations = await indEnt();
+//     for (let result of locations.results){
+//         if (result.categories[0].name == 'Bowling Alley'){
+    const bowlingAlleyIcon = L.icon({
+        iconUrl: '../pictures/bowling.png',
     
         iconSize: [40,40],
         iconAnchor: [22,94],
         popupAnchor: [-3,-76]
-}).addTo(escapeRoomGroup)
-    return escapeRoomGroup
-    }
-    }
-}
+    })
+//     }).addTo(bowlingAlleyGroup)
+//         return bowlingAlleyGroup 
+//     }
+//     }
+// }
 
-async function bowlingAlley(){
-    let bowlingAlleyGroup = L.layerGroup();
-    let locations = await indEnt();
-    for (let result of locations.results){
-        if (result.categories[0].name == 'Bowling Alley'){
-        L.icon({
-            iconUrl: '../pictures/bowling.png',
-        
-            iconSize: [40,40],
-            iconAnchor: [22,94],
-            popupAnchor: [-3,-76]
-    }).addTo(bowlingAlleyGroup)
-        return bowlingAlleyGroup 
-    }
-    }
-}
-
-async function gamingCafe(){
-    let gamingCafeGroup = L.layerGroup();
-    let locations = await indEnt();
-    for (let result of locations.results){
-        if (result.categories[0].name == 'Bowling Alley'){
-        L.icon({
+// async function gamingCafe(){
+//     let gamingCafeGroup = L.layerGroup();
+//     let locations = await indEnt();
+//     for (let result of locations.results){
+//         if (result.categories[0].name == 'Bowling Alley'){
+        const gamingCafeIcon = L.icon({
             iconUrl: '../pictures/joystick.png',
         
             iconSize: [40,40],
             iconAnchor: [22,94],
             popupAnchor: [-3,-76]
-    }).addTo(gamingCafeGroup)
-        return gamingCafeGroup
-    }
-    }
-}
+        })
+//     }).addTo(gamingCafeGroup)
+//         return gamingCafeGroup
+//     }
+//     }
+// }
 
-    let overlays = {
-        'Escape Room' : escapeRoomGroup(),
-        'Bowling Alley' : bowlingAlleyGroup(),
-        'Gaming Cafe' : gamingCafeGroup()
-    }
+//     let overlays = {
+//         'Escape Room' : escapeRoomGroup(),
+//         'Bowling Alley' : bowlingAlleyGroup(),
+//         'Gaming Cafe' : gamingCafeGroup()
+//     }
+    // L.control.layers(overlays).addTo(map);
