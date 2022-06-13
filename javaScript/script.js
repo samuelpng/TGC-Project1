@@ -5,30 +5,36 @@ window.addEventListener('DOMContentLoaded', async function () {
     let locations = await indEnt();
     let searchResultLayer = L.layerGroup();
     searchResultLayer.addTo(map);
+    console.log(locations)
 
     //Clustering and Layering
     let escapeRoomGroup = L.markerClusterGroup();
     let bowlingAlleyGroup = L.markerClusterGroup();
     let gamingCafeGroup = L.markerClusterGroup();
-    let userLocationGroup = L.layerGroup();
-    console.log(locations)
+    //let userLocationGroup = L.layerGroup();
 
     //zoom to user location
     let userLocation = L.control.locate({
         initialZoomLevel: 16,
-        drawCircle: false,
-        start:true
+        drawCircle: true,
     }).addTo(map)
     userLocation.start()
+
 
     for (let place of locations.results) {
         let lat = place.geocodes.main.latitude;
         let lng = place.geocodes.main.longitude;
-        //console.log(lat,lng)
 
-        if (place.categories[0].name == 'Escape Room') {
+        //inputting additional details from foursquare
+        let placeId = place.fsq_id
+        let locationDetails = await entDetails(placeId)
+        //console.log(locationDetails)
+
+        if (place.categories[0].name == 'Escape Room' || locationDetails.categories[0].name=="Escape Room") {
             let escapeRoomMarker = L.marker([lat, lng], { icon: ecapeRoomIcon })
             escapeRoomMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+            //locationDetails.hours.regular[0].open ? ", " + locationDetails.hours.regular[0].open : ""
+            //result.location.address_extended ? ", " + result.location.address_extended: ""
             .addTo(escapeRoomGroup)
                         
         } else if (place.categories[0].name == 'Bowling Alley') {
@@ -42,9 +48,6 @@ window.addEventListener('DOMContentLoaded', async function () {
             .addTo(gamingCafeGroup)
         }
     }
-    // let baseLayers ={
-    //     'Escape Room': escapeRoomGroup,
-    // }
 
     let overlays ={
         'Escape Room': escapeRoomGroup,
@@ -55,8 +58,10 @@ window.addEventListener('DOMContentLoaded', async function () {
     L.control.layers(null, overlays).addTo(map);
 
     //search function
-    document.querySelector('#search-btn').
-        addEventListener('click', async function searchFunc() {
+    // document.querySelector('#search-btn').
+    //     addEventListener('click', async function searchFunc() {
+    document.querySelector('#search-txt').
+        addEventListener('input', async function() {
             //clear existing markers from search result layer
             searchResultLayer.clearLayers();
 
@@ -68,22 +73,30 @@ window.addEventListener('DOMContentLoaded', async function () {
             let response = await search(query)
             console.log(response.data.results)
 
-            for (eachResult of response.data.results) {
+            for (let eachResult of response.data.results) {
                 console.log(eachResult)
 
                 //create markers and put on map
                 let coordinate = [eachResult.LATITUDE, eachResult.LONGITUDE];
                 let marker = L.marker(coordinate).addTo(searchResultLayer);
-                marker.bindPopup(`<div><p>${eachResult.SEARCHVAL}</p></div>`)
+                marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
 
                 //create the search result entry and display under searchbar
                 let resultElement = document.createElement('div');
                 resultElement.className="search-result";
                 resultElement.innerHTML = eachResult.SEARCHVAL;
+                
+                // document.querySelector("#search-txt").addEventListener('input', function(){
+                //     let resultElement = document.createElement('div');
+                //     resultElement.className="search-result";
+                //     resultElement.innerHTML = eachResult.SEARCHVAL;
+                // })
+                
                 resultElement.addEventListener('click',function(){
                     map.flyTo(coordinate, 15)
                     marker.openPopup();
                     document.querySelector("#results").innerHTML = "";
+                    document.querySelector('')
                 })
 
                 document.querySelector("#results").appendChild(resultElement);

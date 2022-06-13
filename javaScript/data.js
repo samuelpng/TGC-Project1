@@ -33,17 +33,17 @@ async function entDetails(fsq_id) {
     let url = FOURSQUARE_BASE_API_URL + `places/${fsq_id}`;
     let response = await axios.get(url,{
         'params':{
-            'fields': 'description,hours,photos'
+            'fields': 'description,hours,photos,categories'
         },
         'headers':{
             'Accept' : 'application/json',
             'Authorization': API_KEY
         }
     })
-    console.log(response.data)
+    //console.log(response.data)
     return response.data
 }
-entDetails('545234c7498e75338f24ed79')
+//entDetails('545234c7498e75338f24ed79')
 
 
 async function search(searchQuery){
