@@ -72,15 +72,12 @@ function createMap(lat,lng){
             iconAnchor: [22,94],
             popupAnchor: [-3,-76]
         })
-//     }).addTo(gamingCafeGroup)
-//         return gamingCafeGroup
-//     }
-//     }
-// }
 
-//     let overlays = {
-//         'Escape Room' : escapeRoomGroup(),
-//         'Bowling Alley' : bowlingAlleyGroup(),
-//         'Gaming Cafe' : gamingCafeGroup()
-//     }
-    // L.control.layers(overlays).addTo(map);
+
+        const searchResultIcon = L.icon({
+            iconUrl: '../pictures/search.png',
+        
+            iconSize: [40,40],
+            iconAnchor: [22,94],
+            popupAnchor: [-3,-76]
+        })

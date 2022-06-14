@@ -78,26 +78,42 @@ window.addEventListener('DOMContentLoaded', async function () {
 
                 //create markers and put on map
                 let coordinate = [eachResult.LATITUDE, eachResult.LONGITUDE];
-                let marker = L.marker(coordinate).addTo(searchResultLayer);
-                marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                //let marker = L.marker(coordinate).addTo(searchResultLayer);
+                //marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
 
                 //create the search result entry and display under searchbar
                 let resultElement = document.createElement('div');
                 resultElement.className="search-result";
                 resultElement.innerHTML = eachResult.SEARCHVAL;
                 
-                // document.querySelector("#search-txt").addEventListener('input', function(){
-                //     let resultElement = document.createElement('div');
-                //     resultElement.className="search-result";
-                //     resultElement.innerHTML = eachResult.SEARCHVAL;
-                // })
-                
+                //create card of search results when user presses enter
+                document.querySelector('#search-txt').addEventListener('keypress',function(enter){
+                    if (enter.key === "Enter"){
+                        let cardElement = document.createElement('div')
+                        cardElement.className="search-card";
+                        cardElement.innerHTML=
+                        `<div class="card" style="width: 18rem;">
+                        <!--<img src="..." class="card-img-top" alt="...">-->
+                        <div class="card-body">
+                          <h5 class="card-title">${eachResult.SEARCHVAL}</h5>
+                          <p class="card-text">${eachResult.ADDRESS}</p>
+                          <a href="#" class="btn btn-warning">Go</a>
+                        </div>
+                      </div>`
+                        document.querySelector("#results").innerHTML = "";
+                        document.querySelector("#card-results").appendChild(cardElement);  
+                    }
+                    
+                })
+
                 resultElement.addEventListener('click',function(){
                     map.flyTo(coordinate, 15)
+                    let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                    marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
                     marker.openPopup();
                     document.querySelector("#results").innerHTML = "";
-                    document.querySelector('')
                 })
+
 
                 document.querySelector("#results").appendChild(resultElement);
             } 
