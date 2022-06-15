@@ -23,30 +23,16 @@ function createMap(lat,lng){
     return map;
 }
 
-// async function escapeRoomGroup(){
-// let escapeRoomGroup = L.layerGroup();
-// let locations = await indEnt();
-// for (let result of locations.results){
-//     let lat = result.geocodes.main.latitude;
-//     let lng = result.geocodes.main.longitude;
-//     if (result.categories[0].name == 'Escape Room'){
+
+    //setting the icons for each marker
+    
     const ecapeRoomIcon = L.icon({
         iconUrl: '../pictures/escape.png', 
         iconSize: [40,40],
         iconAnchor: [22,94],
         popupAnchor: [-3,-76]
     })
-// .addTo(escapeRoomGroup)
-//     return escapeRoomGroup
-//     }
-//     }
-// }
 
-// async function bowlingAlley(){
-//     let bowlingAlleyGroup = L.layerGroup();
-//     let locations = await indEnt();
-//     for (let result of locations.results){
-//         if (result.categories[0].name == 'Bowling Alley'){
     const bowlingAlleyIcon = L.icon({
         iconUrl: '../pictures/bowling.png',
     
@@ -54,17 +40,7 @@ function createMap(lat,lng){
         iconAnchor: [22,94],
         popupAnchor: [-3,-76]
     })
-//     }).addTo(bowlingAlleyGroup)
-//         return bowlingAlleyGroup 
-//     }
-//     }
-// }
 
-// async function gamingCafe(){
-//     let gamingCafeGroup = L.layerGroup();
-//     let locations = await indEnt();
-//     for (let result of locations.results){
-//         if (result.categories[0].name == 'Bowling Alley'){
         const gamingCafeIcon = L.icon({
             iconUrl: '../pictures/joystick.png',
         
@@ -72,7 +48,6 @@ function createMap(lat,lng){
             iconAnchor: [22,94],
             popupAnchor: [-3,-76]
         })
-
 
         const searchResultIcon = L.icon({
             iconUrl: '../pictures/search.png',

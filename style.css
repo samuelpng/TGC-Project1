@@ -10,12 +10,12 @@
     position: absolute;
     z-index: 314159;
     top: 18px;
-    left: 60px;
+    left: 15px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2px;
     padding-left: 12px;
     border-radius: 15px;
-    box-shadow: 0 0 20px 4px goldenrod;
+    box-shadow: 0 0 20px 4px lightsteelblue;
     width: 285px
 }
 
@@ -50,7 +50,8 @@
 
 #card-results {
     overflow-y: scroll;
-    max-height:600px;
+    max-height:800px
+    
 }
 
 .card {
@@ -69,3 +70,7 @@
     margin: 10px;
 }
 
+/* move zoom and self locate controls to the left */
+.leaflet-control-container { 
+    position: absolute; right: 56px 
+} 

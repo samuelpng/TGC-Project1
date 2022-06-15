@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', async function () {
     let searchResultLayer = L.layerGroup();
     searchResultLayer.addTo(map);
     console.log(locations)
-
+    
     //Clustering and Layering
     let escapeRoomGroup = L.markerClusterGroup();
     let bowlingAlleyGroup = L.markerClusterGroup();
@@ -68,9 +68,12 @@ window.addEventListener('DOMContentLoaded', async function () {
             //clear existing search results
             document.querySelector("#results").innerHTML = "";
 
-            let query = document.querySelector('#search-txt').value;
+            //clear existing search cards
+            document.querySelector("#card-results").innerHTML = "";
+            
+            let searchQuery = document.querySelector('#search-txt');
             //let center = map.getBounds().getCenter();
-            let response = await search(query)
+            let response = await search(searchQuery.value)
             console.log(response.data.results)
 
             for (let eachResult of response.data.results) {
@@ -85,9 +88,9 @@ window.addEventListener('DOMContentLoaded', async function () {
                 let resultElement = document.createElement('div');
                 resultElement.className="search-result";
                 resultElement.innerHTML = eachResult.SEARCHVAL;
-                
+
                 //create card of search results when user presses enter
-                document.querySelector('#search-txt').addEventListener('keypress',function(enter){
+                searchQuery.addEventListener('keypress',function(enter){
                     if (enter.key === "Enter"){
                         let cardElement = document.createElement('div')
                         cardElement.className="search-card";
@@ -97,15 +100,38 @@ window.addEventListener('DOMContentLoaded', async function () {
                         <div class="card-body">
                           <h5 class="card-title">${eachResult.SEARCHVAL}</h5>
                           <p class="card-text">${eachResult.ADDRESS}</p>
-                          <a href="#" class="btn btn-warning">Go</a>
+                          <a href="#" id="go-btn" class="btn btn-warning">Go</a>
                         </div>
                       </div>`
                         document.querySelector("#results").innerHTML = "";
                         document.querySelector("#card-results").appendChild(cardElement);  
+                        let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                        marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                        //map.flyTo(coordinate,15);
+
+                        cardElement.addEventListener('mouseover',function(){
+                            marker.openPopup()
+                            map.flyTo(coordinate,15); 
+                        })
+                        
+                        cardElement.addEventListener('click',function(){
+                            map.flyTo(coordinate,16); 
+                            searchResultLayer.clearLayers();
+                            document.querySelector("#card-results").innerHTML = "";
+                            let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                            marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                            marker.openPopup()
+                        })
+
+
+                        // document.querySelector('#go-btn').addEventListener('click',function(){
+                        //     map.flyTo(coordinate,16);
+                        // })
                     }
                     
                 })
 
+                
                 resultElement.addEventListener('click',function(){
                     map.flyTo(coordinate, 15)
                     let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
@@ -116,6 +142,14 @@ window.addEventListener('DOMContentLoaded', async function () {
 
 
                 document.querySelector("#results").appendChild(resultElement);
+                
+                //clear search when clear button is pressed                
+                document.querySelector('#clear-btn').addEventListener('click',function(){
+                    document.querySelector("#results").innerHTML = "";
+                    document.querySelector("#card-results").innerHTML = "";
+                    searchQuery.value="";
+                })
+
             } 
         })
 
