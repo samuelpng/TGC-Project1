@@ -1,5 +1,5 @@
 #map {
-    height: 100vh;
+    height: 80vh;
 }
 
 #map-container {
@@ -69,6 +69,10 @@
 .search-result {
     margin: 10px;
 }
+
+/* #escapeRoomCheckbox{
+    display: none;
+} */
 
 /* move zoom and self locate controls to the left */
 .leaflet-control-container { 

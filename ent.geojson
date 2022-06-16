@@ -1,0 +1,2016 @@
+{
+    "results": [
+      {
+        "fsq_id": "4d438c6514aa8cfa743d5c3d",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7676,
+        "geocodes": {
+          "main": {
+            "latitude": 1.290569,
+            "longitude": 103.851471
+          },
+          "roof": {
+            "latitude": 1.290569,
+            "longitude": 103.851471
+          }
+        },
+        "link": "/v3/places/4d438c6514aa8cfa743d5c3d",
+        "location": {
+          "address": "1 St. Andrew's Rd",
+          "country": "SG",
+          "formatted_address": "1 St. Andrew's Rd, 178957",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "178957"
+        },
+        "name": "National Gallery Singapore",
+        "related_places": {
+          "children": [
+            {
+              "fsq_id": "566a90bb498eb590c4bd924b",
+              "name": "Dbs Singapore Gallery"
+            }
+          ]
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b989892f964a520334835e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6950,
+        "geocodes": {
+          "main": {
+            "latitude": 1.296682,
+            "longitude": 103.848617
+          },
+          "roof": {
+            "latitude": 1.296682,
+            "longitude": 103.848617
+          }
+        },
+        "link": "/v3/places/4b989892f964a520334835e3",
+        "location": {
+          "address": "93 Stamford Rd",
+          "address_extended": "#01-02",
+          "country": "SG",
+          "formatted_address": "93 Stamford Rd, 178897",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "178897"
+        },
+        "name": "National Museum of Singapore",
+        "related_places": {
+          "children": [
+            {
+              "fsq_id": "4ddcb022d22df171990475e2",
+              "name": "Singapore History Gallery"
+            }
+          ]
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b9df38cf964a520ffc336e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8530,
+        "geocodes": {
+          "main": {
+            "latitude": 1.286203,
+            "longitude": 103.859196
+          },
+          "roof": {
+            "latitude": 1.286203,
+            "longitude": 103.859196
+          }
+        },
+        "link": "/v3/places/4b9df38cf964a520ffc336e3",
+        "location": {
+          "address": "10 Bayfront Av",
+          "country": "SG",
+          "cross_street": "Marina Bay Sands",
+          "formatted_address": "10 Bayfront Av (Marina Bay Sands), 018956",
+          "locality": "Singapore",
+          "post_town": "Marina Area",
+          "postcode": "018956"
+        },
+        "name": "Artscience Museum",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4dd8a3f9d1647fcf3e699bad",
+            "name": "Versace - Marina Bay Sands"
+          },
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a52071af22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8061,
+        "geocodes": {
+          "main": {
+            "latitude": 1.287477,
+            "longitude": 103.851477
+          },
+          "roof": {
+            "latitude": 1.287477,
+            "longitude": 103.851477
+          }
+        },
+        "link": "/v3/places/4b058810f964a52071af22e3",
+        "location": {
+          "address": "1 Empress Pl",
+          "country": "SG",
+          "cross_street": "Fullerton Road",
+          "formatted_address": "1 Empress Pl (Fullerton Road), 179555",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "179555"
+        },
+        "name": "Asian Civilisations Museum",
+        "related_places": {
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a5206faf22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7024,
+        "geocodes": {
+          "main": {
+            "latitude": 1.297236,
+            "longitude": 103.850989
+          },
+          "roof": {
+            "latitude": 1.297236,
+            "longitude": 103.850989
+          }
+        },
+        "link": "/v3/places/4b058810f964a5206faf22e3",
+        "location": {
+          "address": "71 Bras Basah Rd",
+          "address_extended": "#01-01 Singapore Art Museum",
+          "country": "SG",
+          "cross_street": "Opp SMU",
+          "formatted_address": "71 Bras Basah Rd (Opp SMU), 189555",
+          "locality": "Singapore",
+          "post_town": "Beach Road",
+          "postcode": "189555"
+        },
+        "name": "Singapore Art Museum",
+        "related_places": {
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b53b53ff964a520a8a827e3",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7037,
+        "geocodes": {
+          "main": {
+            "latitude": 1.297232,
+            "longitude": 103.851908
+          },
+          "roof": {
+            "latitude": 1.297232,
+            "longitude": 103.851908
+          }
+        },
+        "link": "/v3/places/4b53b53ff964a520a8a827e3",
+        "location": {
+          "address": "8 Queen St",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "8 Queen St, 188535",
+          "locality": "Singapore",
+          "post_town": "Beach Road",
+          "postcode": "188535"
+        },
+        "name": "8Q Sam",
+        "related_places": {
+          "children": [
+            {
+              "fsq_id": "5842796a06f1a34af858bde9",
+              "name": "Love Pal Café"
+            }
+          ]
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "54f3de11498efed69d236a5e",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7628,
+        "geocodes": {
+          "main": {
+            "latitude": 1.301552,
+            "longitude": 103.773556
+          },
+          "roof": {
+            "latitude": 1.301552,
+            "longitude": 103.773556
+          }
+        },
+        "link": "/v3/places/54f3de11498efed69d236a5e",
+        "location": {
+          "address": "2 Conservatory Dr",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "2 Conservatory Dr, 117377",
+          "locality": "Singapore",
+          "post_town": "South West",
+          "postcode": "117377"
+        },
+        "name": "Lee Kong Chian Natural History Museum",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4b058810f964a52063af22e3",
+            "name": "National University of Singapore"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4ddcb022d22df171990475e2",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6949,
+        "geocodes": {
+          "main": {
+            "latitude": 1.296613,
+            "longitude": 103.848351
+          },
+          "roof": {
+            "latitude": 1.296613,
+            "longitude": 103.848351
+          }
+        },
+        "link": "/v3/places/4ddcb022d22df171990475e2",
+        "location": {
+          "address": "National Museum of Singapore",
+          "country": "SG",
+          "cross_street": "93 Stamford Rd.",
+          "formatted_address": "National Museum of Singapore (93 Stamford Rd.), 179870",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "179870"
+        },
+        "name": "Singapore History Gallery",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4b989892f964a520334835e3",
+            "name": "National Museum of Singapore"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4c920c2b2626a1cd3d01376b",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8505,
+        "geocodes": {
+          "main": {
+            "latitude": 1.277201,
+            "longitude": 103.837338
+          },
+          "roof": {
+            "latitude": 1.277201,
+            "longitude": 103.837338
+          }
+        },
+        "link": "/v3/places/4c920c2b2626a1cd3d01376b",
+        "location": {
+          "address": "157 Neil Rd",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "157 Neil Rd, 088883",
+          "locality": "Singapore",
+          "post_town": "Central Business District",
+          "postcode": "088883"
+        },
+        "name": "Baba House",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a5205caf22e3",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8560,
+        "geocodes": {
+          "main": {
+            "latitude": 1.279585,
+            "longitude": 103.794122
+          },
+          "roof": {
+            "latitude": 1.279585,
+            "longitude": 103.794122
+          }
+        },
+        "link": "/v3/places/4b058810f964a5205caf22e3",
+        "location": {
+          "address": "31K Pepys Rd",
+          "country": "SG",
+          "formatted_address": "31K Pepys Rd, 118458",
+          "locality": "Singapore",
+          "post_town": "South West",
+          "postcode": "118458"
+        },
+        "name": "Reflections at Bukit Chandu",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a5205baf22e3",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 5645,
+        "geocodes": {
+          "main": {
+            "latitude": 1.352615,
+            "longitude": 103.768982
+          }
+        },
+        "link": "/v3/places/4b058810f964a5205baf22e3",
+        "location": {
+          "address": "351 Upper Bukit Timah Rd",
+          "country": "SG",
+          "formatted_address": "351 Upper Bukit Timah Rd, 588192",
+          "locality": "Singapore",
+          "post_town": "Central West",
+          "postcode": "588192"
+        },
+        "name": "Surviving the Japanese Occupation: War and Its Legacies",
+        "related_places": {
+          "parent": {
+            "fsq_id": "58a3ab249e35d35cf90c8014",
+            "name": "Former Ford Factory"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058811f964a52099af22e3",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8095,
+        "geocodes": {
+          "main": {
+            "latitude": 1.283605,
+            "longitude": 103.844261
+          },
+          "roof": {
+            "latitude": 1.283605,
+            "longitude": 103.844261
+          }
+        },
+        "link": "/v3/places/4b058811f964a52099af22e3",
+        "location": {
+          "address": "48 Pagoda St",
+          "country": "SG",
+          "formatted_address": "48 Pagoda St, 059207",
+          "locality": "Chinatown",
+          "post_town": "Marina Area",
+          "postcode": "059207"
+        },
+        "name": "Chinatown Heritage Centre",
+        "related_places": {
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b05880ff964a520e9ae22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8544,
+        "geocodes": {
+          "main": {
+            "latitude": 1.279593,
+            "longitude": 103.84516
+          },
+          "roof": {
+            "latitude": 1.279593,
+            "longitude": 103.84516
+          }
+        },
+        "link": "/v3/places/4b05880ff964a520e9ae22e3",
+        "location": {
+          "address": "45 Maxwell Rd",
+          "address_extended": "45 Maxwell Road The Ura Centre The URA Centre,, Level 2",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "45 Maxwell Rd, 069118",
+          "locality": "Singapore",
+          "post_town": "Marina Area",
+          "postcode": "069118"
+        },
+        "name": "Singapore City Gallery",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4c50e0780ef3a59356ce0a7b",
+            "name": "The Ura Centre"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a5206caf22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 9457,
+        "geocodes": {
+          "main": {
+            "latitude": 1.332763,
+            "longitude": 103.735952
+          },
+          "roof": {
+            "latitude": 1.332763,
+            "longitude": 103.735952
+          }
+        },
+        "link": "/v3/places/4b058810f964a5206caf22e3",
+        "location": {
+          "address": "15 Science Centre Rd",
+          "country": "SG",
+          "formatted_address": "15 Science Centre Rd, 609081",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "609081"
+        },
+        "name": "Science Centre Singapore",
+        "related_places": {
+          "children": [
+            {
+              "fsq_id": "4e49ee07fa76a0c058ca9cfb",
+              "name": "Annexe Courtyard"
+            },
+            {
+              "fsq_id": "4f3b16e8e4b026d356a6fd8f",
+              "name": "Car Park | Singapore Science Centre"
+            }
+          ]
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a52078af22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7232,
+        "geocodes": {
+          "main": {
+            "latitude": 1.294202,
+            "longitude": 103.849111
+          },
+          "roof": {
+            "latitude": 1.294202,
+            "longitude": 103.849111
+          }
+        },
+        "link": "/v3/places/4b058810f964a52078af22e3",
+        "location": {
+          "address": "39 Armenian St",
+          "country": "SG",
+          "formatted_address": "39 Armenian St, 179941",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "179941"
+        },
+        "name": "Peranakan Museum",
+        "related_places": {
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b05880ff964a5202caf22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7079,
+        "geocodes": {
+          "main": {
+            "latitude": 1.302815,
+            "longitude": 103.859876
+          },
+          "roof": {
+            "latitude": 1.302815,
+            "longitude": 103.859876
+          }
+        },
+        "link": "/v3/places/4b05880ff964a5202caf22e3",
+        "location": {
+          "address": "85 Sultan Gate",
+          "country": "SG",
+          "cross_street": "Kampong Glam",
+          "formatted_address": "85 Sultan Gate (Kampong Glam), 198501",
+          "locality": "Singapore",
+          "post_town": "Beach Road",
+          "postcode": "198501"
+        },
+        "name": "Malay Heritage Centre",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4c480416d012ef3bc3d71ca0",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7468,
+        "geocodes": {
+          "main": {
+            "latitude": 1.292241,
+            "longitude": 103.849267
+          },
+          "roof": {
+            "latitude": 1.292241,
+            "longitude": 103.849267
+          }
+        },
+        "link": "/v3/places/4c480416d012ef3bc3d71ca0",
+        "location": {
+          "address": "62 Hill St",
+          "country": "SG",
+          "formatted_address": "62 Hill St, 179367",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "179367"
+        },
+        "name": "Civil Defence Heritage Gallery",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a5206eaf22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7329,
+        "geocodes": {
+          "main": {
+            "latitude": 1.292862,
+            "longitude": 103.848705
+          }
+        },
+        "link": "/v3/places/4b058810f964a5206eaf22e3",
+        "location": {
+          "address": "23B Coleman St",
+          "country": "SG",
+          "formatted_address": "23B Coleman St, 179807",
+          "locality": "Singapore",
+          "neighborhood": [
+            "Central Region"
+          ],
+          "post_town": "City Hall",
+          "postcode": "179807"
+        },
+        "name": "Singapore Philatelic Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b1772e4f964a5209fc523e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6658,
+        "geocodes": {
+          "main": {
+            "latitude": 1.299336,
+            "longitude": 103.847623
+          },
+          "roof": {
+            "latitude": 1.299336,
+            "longitude": 103.847623
+          }
+        },
+        "link": "/v3/places/4b1772e4f964a5209fc523e3",
+        "location": {
+          "address": "2 Handy Rd",
+          "address_extended": "#02-16",
+          "country": "SG",
+          "formatted_address": "2 Handy Rd, 229233",
+          "locality": "Singapore",
+          "post_town": "Orchard",
+          "postcode": "229233"
+        },
+        "name": "The Cathay Gallery",
+        "related_places": {
+          "children": [
+            {
+              "fsq_id": "4e043004b0fb3e6ecac3954c",
+              "name": "Liho"
+            },
+            {
+              "fsq_id": "5ab4efda7918711d1be71599",
+              "name": "Kooks Creamery"
+            }
+          ]
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b06c53af964a520f0ef22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8700,
+        "geocodes": {
+          "main": {
+            "latitude": 1.283874,
+            "longitude": 103.781511
+          }
+        },
+        "link": "/v3/places/4b06c53af964a520f0ef22e3",
+        "location": {
+          "address": "262 Pasir Panjang Rd",
+          "country": "SG",
+          "formatted_address": "262 Pasir Panjang Rd, 118628",
+          "locality": "Singapore",
+          "post_town": "South West",
+          "postcode": "118628"
+        },
+        "name": "Haw Par Villa",
+        "related_places": {
+          "children": [
+            {
+              "fsq_id": "4cdd06ee930af04d47bd9397",
+              "name": "Ten Courts of Hell"
+            }
+          ]
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058811f964a5208eaf22e3",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8480,
+        "geocodes": {
+          "main": {
+            "latitude": 1.31571,
+            "longitude": 103.886934
+          },
+          "roof": {
+            "latitude": 1.31571,
+            "longitude": 103.886934
+          }
+        },
+        "link": "/v3/places/4b058811f964a5208eaf22e3",
+        "location": {
+          "address": "460 Sims Ave",
+          "country": "SG",
+          "formatted_address": "460 Sims Ave, 387601",
+          "locality": "Singapore",
+          "post_town": "Eunos",
+          "postcode": "387601"
+        },
+        "name": "Tan Swie Hian Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "500a48e9e4b08ffd5972d059",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4073,
+        "geocodes": {
+          "main": {
+            "latitude": 1.326311,
+            "longitude": 103.845852
+          }
+        },
+        "link": "/v3/places/500a48e9e4b08ffd5972d059",
+        "location": {
+          "address": "1 Tai Gin Rd",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "1 Tai Gin Rd, 327872",
+          "locality": "Singapore",
+          "post_town": "Toa Payoh",
+          "postcode": "327872"
+        },
+        "name": "National Heritage Board",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4cd0cd2a5b5ca35dac4a7ef0",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4091,
+        "geocodes": {
+          "main": {
+            "latitude": 1.324191,
+            "longitude": 103.845463
+          },
+          "roof": {
+            "latitude": 1.324191,
+            "longitude": 103.845463
+          }
+        },
+        "link": "/v3/places/4cd0cd2a5b5ca35dac4a7ef0",
+        "location": {
+          "address": "28 Irrawaddy Rd",
+          "address_extended": "Level 1 & 2 28 Irrawaddy Road",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "28 Irrawaddy Rd, 329560",
+          "locality": "Singapore",
+          "post_town": "Toa Payoh",
+          "postcode": "329560"
+        },
+        "name": "Police Heritage Centre",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4cf86c6c4464b60c297a60f8",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4552,
+        "geocodes": {
+          "main": {
+            "latitude": 1.326466,
+            "longitude": 103.851901
+          },
+          "roof": {
+            "latitude": 1.326466,
+            "longitude": 103.851901
+          }
+        },
+        "link": "/v3/places/4cf86c6c4464b60c297a60f8",
+        "location": {
+          "address": "8 Jln Ampas",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "8 Jln Ampas, 329516",
+          "locality": "Singapore",
+          "post_town": "Toa Payoh",
+          "postcode": "329516"
+        },
+        "name": "Shaw Movie Studio",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058811f964a5209aaf22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7311,
+        "geocodes": {
+          "main": {
+            "latitude": 1.296236,
+            "longitude": 103.854619
+          },
+          "roof": {
+            "latitude": 1.296236,
+            "longitude": 103.854619
+          }
+        },
+        "link": "/v3/places/4b058811f964a5209aaf22e3",
+        "location": {
+          "address": "26 Seah St",
+          "country": "SG",
+          "formatted_address": "26 Seah St, 188382",
+          "locality": "Singapore",
+          "post_town": "Beach Road",
+          "postcode": "188382"
+        },
+        "name": "Mint Museum of Toys",
+        "related_places": {
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a52079af22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8837,
+        "geocodes": {
+          "main": {
+            "latitude": 1.346919,
+            "longitude": 103.899229
+          },
+          "roof": {
+            "latitude": 1.346919,
+            "longitude": 103.899229
+          }
+        },
+        "link": "/v3/places/4b058810f964a52079af22e3",
+        "location": {
+          "address": "400 Airport Rd, Paya Lebar Airbase",
+          "country": "SG",
+          "cross_street": "400 Airport Rd.",
+          "formatted_address": "400 Airport Rd, Paya Lebar Airbase (400 Airport Rd.), 534234",
+          "locality": "Singapore",
+          "post_town": "Hougang",
+          "postcode": "534234"
+        },
+        "name": "Republic of Singapore Air Force Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "611a15bb54ff0843f1cb8c47",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 5563,
+        "geocodes": {
+          "main": {
+            "latitude": 1.30261,
+            "longitude": 103.812206
+          }
+        },
+        "link": "/v3/places/611a15bb54ff0843f1cb8c47",
+        "location": {
+          "address": "100 Loewen Rd",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "100 Loewen Rd, 248837",
+          "locality": "Tanglin",
+          "neighborhood": [
+            "Tanglin, Singapore"
+          ],
+          "post_town": "Tanglin",
+          "postcode": "248837"
+        },
+        "name": "Museum of Ice Cream",
+        "related_places": {
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "503f0d2ae4b02d86890c934c",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 5884,
+        "geocodes": {
+          "main": {
+            "latitude": 1.308177,
+            "longitude": 103.849439
+          },
+          "roof": {
+            "latitude": 1.308177,
+            "longitude": 103.849439
+          }
+        },
+        "link": "/v3/places/503f0d2ae4b02d86890c934c",
+        "location": {
+          "address": "1 Hampshire Rd Blk 1",
+          "address_extended": "Level 1",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "1 Hampshire Rd Blk 1, 219428",
+          "locality": "Singapore",
+          "post_town": "Little India",
+          "postcode": "219428"
+        },
+        "name": "Land Transport Gallery",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "552739ce498ed3209288bb97",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6303,
+        "geocodes": {
+          "main": {
+            "latitude": 1.305645,
+            "longitude": 103.85231
+          },
+          "roof": {
+            "latitude": 1.305645,
+            "longitude": 103.85231
+          }
+        },
+        "link": "/v3/places/552739ce498ed3209288bb97",
+        "location": {
+          "address": "5 Campbell Lane",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "5 Campbell Lane, 209924",
+          "locality": "Singapore",
+          "neighborhood": [
+            "Little India"
+          ],
+          "post_town": "Little India",
+          "postcode": "209924"
+        },
+        "name": "Indian Heritage Centre",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "5c637ae0c8b2fb002cf0acb2",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6408,
+        "geocodes": {
+          "main": {
+            "latitude": 1.298784,
+            "longitude": 103.797806
+          }
+        },
+        "link": "/v3/places/5c637ae0c8b2fb002cf0acb2",
+        "location": {
+          "address": "463 Commonwealth Drv",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "463 Commonwealth Drv, 142046",
+          "locality": "Singapore",
+          "post_town": "Central South",
+          "postcode": "142046"
+        },
+        "name": "Museum, My Queenstown",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "59c8925f8496ca5837db5145",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6409,
+        "geocodes": {
+          "main": {
+            "latitude": 1.299493,
+            "longitude": 103.843314
+          },
+          "roof": {
+            "latitude": 1.299493,
+            "longitude": 103.843314
+          }
+        },
+        "link": "/v3/places/59c8925f8496ca5837db5145",
+        "location": {
+          "address": "35 Orchard Rd Istana Istana Pk",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "35 Orchard Rd Istana Istana Pk",
+          "locality": "Singapore",
+          "post_town": "Orchard",
+          "postcode": ""
+        },
+        "name": "Istana Heritage Gallery",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4cba61e6bac93704eb75eb7c",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6627,
+        "geocodes": {
+          "main": {
+            "latitude": 1.299675,
+            "longitude": 103.847294
+          },
+          "roof": {
+            "latitude": 1.299675,
+            "longitude": 103.847294
+          }
+        },
+        "link": "/v3/places/4cba61e6bac93704eb75eb7c",
+        "location": {
+          "address": "6 Handy Rd",
+          "address_extended": "#02-01",
+          "country": "SG",
+          "formatted_address": "6 Handy Rd, 229234",
+          "locality": "Singapore",
+          "post_town": "Orchard",
+          "postcode": "229234"
+        },
+        "name": "The Luxe Art Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4dae05900437710b812a3e4f",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6656,
+        "geocodes": {
+          "main": {
+            "latitude": 1.304945,
+            "longitude": 103.782903
+          }
+        },
+        "link": "/v3/places/4dae05900437710b812a3e4f",
+        "location": {
+          "address": "8 Dover Rise, Tower A",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "8 Dover Rise, Tower A, 130000",
+          "locality": "Singapore",
+          "post_town": "South West",
+          "postcode": "130000"
+        },
+        "name": "Vera's Shoe Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "508dd4d6e4b0ad933cf5bce4",
+        "categories": [
+          {
+            "id": 10031,
+            "name": "Science Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_science_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6819,
+        "geocodes": {
+          "main": {
+            "latitude": 1.299755,
+            "longitude": 103.787689
+          },
+          "roof": {
+            "latitude": 1.299755,
+            "longitude": 103.787689
+          }
+        },
+        "link": "/v3/places/508dd4d6e4b0ad933cf5bce4",
+        "location": {
+          "address": "1 Fusionopolis Way",
+          "address_extended": "#13-10 Connexis North",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "1 Fusionopolis Way, 138632",
+          "locality": "Singapore",
+          "post_town": "South West",
+          "postcode": "138632"
+        },
+        "name": "Fusionworld",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "5ce290e8c36588002c67c2e6",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6865,
+        "geocodes": {
+          "main": {
+            "latitude": 1.413013,
+            "longitude": 103.829502
+          },
+          "roof": {
+            "latitude": 1.413013,
+            "longitude": 103.829502
+          }
+        },
+        "link": "/v3/places/5ce290e8c36588002c67c2e6",
+        "location": {
+          "address": "81 Lor Chencharu",
+          "address_extended": "#01-16 Orto",
+          "country": "SG",
+          "cross_street": "81 Lor Chencharu",
+          "formatted_address": "81 Lor Chencharu (81 Lor Chencharu), 769198",
+          "locality": "Yishun New Town",
+          "post_town": "Yishun",
+          "postcode": "769198",
+          "region": "Singapore"
+        },
+        "name": "The Live Turtle and Tortoise Museum",
+        "related_places": {
+          "parent": {
+            "fsq_id": "5488703d498eab8d32f9c4a2",
+            "name": "Orto"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "592fea5d0336935e082de091",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6921,
+        "geocodes": {
+          "main": {
+            "latitude": 1.303404,
+            "longitude": 103.858639
+          },
+          "roof": {
+            "latitude": 1.303404,
+            "longitude": 103.858639
+          }
+        },
+        "link": "/v3/places/592fea5d0336935e082de091",
+        "location": {
+          "address": "8C & 8D Jln Kledek",
+          "country": "SG",
+          "cross_street": "Victoria Street",
+          "formatted_address": "8C & 8D Jln Kledek (Victoria Street), 199263",
+          "locality": "Singapore",
+          "neighborhood": [
+            "Central Region"
+          ],
+          "post_town": "Beach Road",
+          "postcode": "199263"
+        },
+        "name": "Vintage Cameras Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4da6ebeb0cb66f65870f0a11",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6926,
+        "geocodes": {
+          "main": {
+            "latitude": 1.298107,
+            "longitude": 103.851308
+          },
+          "roof": {
+            "latitude": 1.298107,
+            "longitude": 103.851308
+          }
+        },
+        "link": "/v3/places/4da6ebeb0cb66f65870f0a11",
+        "location": {
+          "address": "51 Waterloo St",
+          "address_extended": "#02-06",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "51 Waterloo St, 187969",
+          "locality": "Singapore",
+          "post_town": "Beach Road",
+          "postcode": "187969"
+        },
+        "name": "The Private Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "52031e2c498e51761e0f1a9c",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 6940,
+        "geocodes": {
+          "main": {
+            "latitude": 1.296765,
+            "longitude": 103.848703
+          },
+          "roof": {
+            "latitude": 1.296765,
+            "longitude": 103.848703
+          }
+        },
+        "link": "/v3/places/52031e2c498e51761e0f1a9c",
+        "location": {
+          "address": "Exhibition Gallery 1 National Museum Of",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "Exhibition Gallery 1 National Museum Of, 178897",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "178897"
+        },
+        "name": "Princely Treasures",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4bfde87fb68d0f473f8fe957",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7706,
+        "geocodes": {
+          "main": {
+            "latitude": 1.301467,
+            "longitude": 103.772059
+          },
+          "roof": {
+            "latitude": 1.301467,
+            "longitude": 103.772059
+          }
+        },
+        "link": "/v3/places/4bfde87fb68d0f473f8fe957",
+        "location": {
+          "address": "50 Kent Ridge Cr, National University of",
+          "address_extended": "University Cultural Centre",
+          "country": "SG",
+          "cross_street": "50 Kent Ridge Crescent",
+          "formatted_address": "50 Kent Ridge Cr, National University of (50 Kent Ridge Crescent), 119279",
+          "locality": "Singapore",
+          "post_town": "South West",
+          "postcode": "119279"
+        },
+        "name": "Nus Museum",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4b058810f964a52063af22e3",
+            "name": "National University of Singapore"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4ee70879aa1fd7f756c5108e",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7231,
+        "geocodes": {
+          "main": {
+            "latitude": 1.294126,
+            "longitude": 103.849517
+          },
+          "roof": {
+            "latitude": 1.294126,
+            "longitude": 103.849517
+          }
+        },
+        "link": "/v3/places/4ee70879aa1fd7f756c5108e",
+        "location": {
+          "address": "39 Armenian St",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "39 Armenian St, 179934",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "179934"
+        },
+        "name": "True Blue Shoppe",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b84a3c8f964a520653f31e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8110,
+        "geocodes": {
+          "main": {
+            "latitude": 1.283294,
+            "longitude": 103.84423
+          },
+          "roof": {
+            "latitude": 1.283294,
+            "longitude": 103.84423
+          }
+        },
+        "link": "/v3/places/4b84a3c8f964a520653f31e3",
+        "location": {
+          "address": "2 Trengganu St",
+          "address_extended": "#3-entrance Level at Pagoda St",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "2 Trengganu St, 058456",
+          "locality": "Singapore",
+          "post_town": "Marina Area",
+          "postcode": "058456"
+        },
+        "name": "Singapore Coins and Notes Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "574980ff498ed48af3e0b939",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7696,
+        "geocodes": {
+          "main": {
+            "latitude": 1.290803,
+            "longitude": 103.851909
+          },
+          "roof": {
+            "latitude": 1.290803,
+            "longitude": 103.851909
+          }
+        },
+        "link": "/v3/places/574980ff498ed48af3e0b939",
+        "location": {
+          "address": "National Gallery Singapore",
+          "country": "SG",
+          "cross_street": "1 St. Andrew's Road",
+          "formatted_address": "National Gallery Singapore (1 St. Andrew's Road), 178957",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "178957"
+        },
+        "name": "City Hall Wing | National Gallery Singapore",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4d438c6514aa8cfa743d5c3d",
+            "name": "National Gallery Singapore"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "56a0c44b498e737622053463",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7711,
+        "geocodes": {
+          "main": {
+            "latitude": 1.290406,
+            "longitude": 103.851582
+          }
+        },
+        "link": "/v3/places/56a0c44b498e737622053463",
+        "location": {
+          "address": "1 St. Andrew's Rd",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "1 St. Andrew's Rd, 170000",
+          "locality": "Singapore",
+          "post_town": "City Hall",
+          "postcode": "170000"
+        },
+        "name": "The Ngee Ann Kongsi Concourse Gallery",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4d438c6514aa8cfa743d5c3d",
+            "name": "National Gallery Singapore"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4c7657f7d8948cfa17106ada",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7847,
+        "geocodes": {
+          "main": {
+            "latitude": 1.28893,
+            "longitude": 103.851232
+          },
+          "roof": {
+            "latitude": 1.28893,
+            "longitude": 103.851232
+          }
+        },
+        "link": "/v3/places/4c7657f7d8948cfa17106ada",
+        "location": {
+          "address": "1 Old Parliament Lane, The Arts House",
+          "address_extended": "Level 2",
+          "country": "SG",
+          "cross_street": "1 Old Parliament Lane",
+          "formatted_address": "1 Old Parliament Lane, The Arts House (1 Old Parliament Lane), 179429",
+          "locality": "Singapore",
+          "neighborhood": [
+            "Downtown Core"
+          ],
+          "post_town": "City Hall",
+          "postcode": "179429"
+        },
+        "name": "Play Den",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4b058814f964a5206fb022e3",
+            "name": "The Arts House"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4e705347483b9778fd3621ea",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 7986,
+        "geocodes": {
+          "main": {
+            "latitude": 1.291696,
+            "longitude": 103.860269
+          }
+        },
+        "link": "/v3/places/4e705347483b9778fd3621ea",
+        "location": {
+          "address": "9 Raffles Boulevard, Millenia Walk Unit, Social Creatives Museum",
+          "address_extended": "#02-55",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "9 Raffles Boulevard, Millenia Walk Unit, Social Creatives Museum, 039596",
+          "locality": "Singapore",
+          "post_town": "Marina Area",
+          "postcode": "039596"
+        },
+        "name": "Social Creatives",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "5327c242498efab8501abbfe",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8112,
+        "geocodes": {
+          "main": {
+            "latitude": 1.28346,
+            "longitude": 103.844402
+          },
+          "roof": {
+            "latitude": 1.28346,
+            "longitude": 103.844402
+          }
+        },
+        "link": "/v3/places/5327c242498efab8501abbfe",
+        "location": {
+          "address": "40 Pagoda St",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "40 Pagoda St, 059199",
+          "locality": "Singapore",
+          "post_town": "Marina Area",
+          "postcode": "059199",
+          "region": "Singapore"
+        },
+        "name": "Singapore Coins and Notes Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "591590092ebb340220a35084",
+        "categories": [
+          {
+            "id": 10028,
+            "name": "Art Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8298,
+        "geocodes": {
+          "main": {
+            "latitude": 1.278917,
+            "longitude": 103.804415
+          },
+          "roof": {
+            "latitude": 1.278917,
+            "longitude": 103.804415
+          }
+        },
+        "link": "/v3/places/591590092ebb340220a35084",
+        "location": {
+          "address": "Blk 22 Gillman Barracks",
+          "country": "SG",
+          "cross_street": "Lock Road",
+          "formatted_address": "Blk 22 Gillman Barracks (Lock Road), 108938",
+          "locality": "Singapore",
+          "post_town": "South",
+          "postcode": "108938",
+          "region": "Singapore"
+        },
+        "name": "Block 22 Gillman Barracks",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4bd8d4bce914a593d7c154fa",
+            "name": "Gillman Barracks"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4bd2848f462cb71376a4dc07",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8456,
+        "geocodes": {
+          "main": {
+            "latitude": 1.288823,
+            "longitude": 103.777342
+          },
+          "roof": {
+            "latitude": 1.288823,
+            "longitude": 103.777342
+          }
+        },
+        "link": "/v3/places/4bd2848f462cb71376a4dc07",
+        "location": {
+          "address": "Pasir Panjang Road",
+          "country": "SG",
+          "cross_street": "Junction of Pasir Panjang Rd & Science Park Rd",
+          "formatted_address": "Pasir Panjang Road (Junction of Pasir Panjang Rd & Science Park Rd), 117450",
+          "locality": "Singapore",
+          "post_town": "South West",
+          "postcode": "117450",
+          "region": "Singapore"
+        },
+        "name": "Machine-Gun Pillbox, Pasir Panjang Road",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "56667a28498ef28acfeecc48",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8518,
+        "geocodes": {
+          "main": {
+            "latitude": 1.280669,
+            "longitude": 103.847441
+          },
+          "roof": {
+            "latitude": 1.280669,
+            "longitude": 103.847441
+          }
+        },
+        "link": "/v3/places/56667a28498ef28acfeecc48",
+        "location": {
+          "address": "168 Telok Ayer St",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "168 Telok Ayer St, 068619",
+          "locality": "Singapore",
+          "post_town": "Marina Area",
+          "postcode": "068619"
+        },
+        "name": "Singapore Musical Box Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4d440600bbb1a1434c664172",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 8362,
+        "geocodes": {
+          "main": {
+            "latitude": 1.282829,
+            "longitude": 103.848754
+          },
+          "roof": {
+            "latitude": 1.282829,
+            "longitude": 103.848754
+          }
+        },
+        "link": "/v3/places/4d440600bbb1a1434c664172",
+        "location": {
+          "address": "76 Telok Ayer St",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "76 Telok Ayer St, 048464",
+          "locality": "Singapore",
+          "post_town": "Marina Area",
+          "postcode": "048464"
+        },
+        "name": "Fuk Tak Chi Museum",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      }
+    ],
+    "context": {
+      "geo_bounds": {
+        "circle": {
+          "center": {
+            "latitude": 1.3521,
+            "longitude": 103.8198
+          },
+          "radius": 10000
+        }
+      }
+    }
+  }

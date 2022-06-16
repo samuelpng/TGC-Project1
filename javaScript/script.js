@@ -5,12 +5,13 @@ window.addEventListener('DOMContentLoaded', async function () {
     let locations = await indEnt();
     let searchResultLayer = L.layerGroup();
     searchResultLayer.addTo(map);
-    console.log(locations)
     
     //Clustering and Layering
     let escapeRoomGroup = L.markerClusterGroup();
     let bowlingAlleyGroup = L.markerClusterGroup();
     let gamingCafeGroup = L.markerClusterGroup();
+    let movieTheaterGroup = L.markerClusterGroup();
+    let museumGroup = L.markerClusterGroup();
     //let userLocationGroup = L.layerGroup();
 
     //zoom to user location
@@ -26,11 +27,11 @@ window.addEventListener('DOMContentLoaded', async function () {
         let lng = place.geocodes.main.longitude;
 
         //inputting additional details from foursquare
-        let placeId = place.fsq_id
-        let locationDetails = await entDetails(placeId)
+        // let placeId = place.fsq_id
+        // let locationDetails = await entDetails(placeId)
         //console.log(locationDetails)
 
-        if (place.categories[0].name == 'Escape Room' || locationDetails.categories[0].name=="Escape Room") {
+        if (place.categories[0].name == 'Escape Room') {
             let escapeRoomMarker = L.marker([lat, lng], { icon: ecapeRoomIcon })
             escapeRoomMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
             //locationDetails.hours.regular[0].open ? ", " + locationDetails.hours.regular[0].open : ""
@@ -46,22 +47,50 @@ window.addEventListener('DOMContentLoaded', async function () {
             let gamingCafeMarker = L.marker([lat, lng], { icon: gamingCafeIcon })
             gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
             .addTo(gamingCafeGroup)
+        }else if (place.categories[0].name == 'Movie Theater') {
+            let gamingCafeMarker = L.marker([lat, lng], { icon: movieTheaterIcon })
+            gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+            .addTo(movieTheaterGroup)
+        }else if (place.categories[0].name == 'Museum') {
+            let gamingCafeMarker = L.marker([lat, lng], { icon: museumIcon })
+            gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+            .addTo(museumGroup)
         }
     }
 
     let overlays ={
         'Escape Room': escapeRoomGroup,
         'Bowling Alley': bowlingAlleyGroup,
-        'Gaming Cafe': gamingCafeGroup
+        'Gaming Cafe': gamingCafeGroup,
+        'Movie Theater': movieTheaterGroup,
+        'Museum': museumGroup
     }
 
     L.control.layers(null, overlays).addTo(map);
+
+    document.querySelector('input[name=escapeRoomCheckbox]').addEventListener('change', function() {
+        if (document.querySelector('#escapeRoomCheckbox').checked) {
+        map.addLayer(escapeRoomGroup);
+        console.log('dog')
+        } else if (!document.querySelector('#escapeRoomCheckbox').checked) {
+        map.removeLayer(escapeRoomGroup);
+        console.log('hi')
+            }
+        })
 
     //search function
     // document.querySelector('#search-btn').
     //     addEventListener('click', async function searchFunc() {
     document.querySelector('#search-txt').
         addEventListener('input', async function() {
+            
+            //show clear button
+            let clearBtn = document.querySelector("#clear-btn")
+            if(clearBtn.style.display === 'none'){
+                clearBtn.style.display === 'block'
+            }
+            
+            
             //clear existing markers from search result layer
             searchResultLayer.clearLayers();
 
@@ -74,10 +103,10 @@ window.addEventListener('DOMContentLoaded', async function () {
             let searchQuery = document.querySelector('#search-txt');
             //let center = map.getBounds().getCenter();
             let response = await search(searchQuery.value)
-            console.log(response.data.results)
+            //console.log(response.data.results)
 
             for (let eachResult of response.data.results) {
-                console.log(eachResult)
+                //console.log(eachResult)
 
                 //create markers and put on map
                 let coordinate = [eachResult.LATITUDE, eachResult.LONGITUDE];
@@ -131,7 +160,7 @@ window.addEventListener('DOMContentLoaded', async function () {
                     
                 })
 
-                
+                //zoom to location and marker pop up when click on search result
                 resultElement.addEventListener('click',function(){
                     map.flyTo(coordinate, 15)
                     let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
@@ -148,9 +177,20 @@ window.addEventListener('DOMContentLoaded', async function () {
                     document.querySelector("#results").innerHTML = "";
                     document.querySelector("#card-results").innerHTML = "";
                     searchQuery.value="";
+                    searchResultLayer.clearLayers();
+                
+                
                 })
 
             } 
         })
 
 })
+
+// document.querySelector('#escapeRoomCheckbox').addEventListener('click', function () {
+//     if (document.querySelector("escapeRoomCheckbox").checked) {
+//         map.addLayer(escapeRoomGroup);
+//     } else if (!document.querySelector("#hotels").checked) {
+//         map.removeLayer(escapeRoomGroup);
+//     }
+// })
