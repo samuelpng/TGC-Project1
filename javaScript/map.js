@@ -73,4 +73,5 @@ const searchResultIcon = L.icon({
     popupAnchor: [-3, -76]
 })
 
-
+//hide search button
+document.querySelector("#clear-btn").style.display = "none";

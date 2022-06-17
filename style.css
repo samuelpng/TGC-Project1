@@ -31,13 +31,25 @@
     box-shadow: none
 } */
 
-#search-btn, #clear-btn {
-    height: 40px;
-    width: 35px;
+#search-btn {
+    height: 35px;
+    width: 30px;
     border: transparent;
     background-color: transparent;
     font-size:13px;
 }
+
+#search-btn, #clear-btn {
+    height: 35px;
+    width: 30px;
+    border: transparent;
+    background-color: transparent;
+    font-size:13px;
+}
+
+/* #clear-btn{
+    display: none;
+} */
 
 .fa-magnifying-glass, .fa-x {
     color: grey;

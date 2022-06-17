@@ -31,12 +31,21 @@ window.addEventListener('DOMContentLoaded', async function () {
         // let locationDetails = await entDetails(placeId)
         //console.log(locationDetails)
 
+        //locationDetails.hours.regular[0].open ? ", " + locationDetails.hours.regular[0].open : ""
+            //result.location.address_extended ? ", " + result.location.address_extended: "
+        // function addMarkerToLayer(lat,lng,iconName,groupName){
+        //     let escapeRoomMarker = L.marker([lat, lng], { icon: iconName })
+        //     escapeRoomMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+        //     .addTo(groupName)
+        // }
+
         if (place.categories[0].name == 'Escape Room') {
             let escapeRoomMarker = L.marker([lat, lng], { icon: ecapeRoomIcon })
             escapeRoomMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
             //locationDetails.hours.regular[0].open ? ", " + locationDetails.hours.regular[0].open : ""
             //result.location.address_extended ? ", " + result.location.address_extended: ""
             .addTo(escapeRoomGroup)
+            // addMarkerToLayer()
                         
         } else if (place.categories[0].name == 'Bowling Alley') {
             let bowlingAlleyMarker = L.marker([lat, lng], { icon: bowlingAlleyIcon })
@@ -47,10 +56,12 @@ window.addEventListener('DOMContentLoaded', async function () {
             let gamingCafeMarker = L.marker([lat, lng], { icon: gamingCafeIcon })
             gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
             .addTo(gamingCafeGroup)
+
         }else if (place.categories[0].name == 'Movie Theater') {
             let gamingCafeMarker = L.marker([lat, lng], { icon: movieTheaterIcon })
             gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
             .addTo(movieTheaterGroup)
+
         }else if (place.categories[0].name == 'Museum') {
             let gamingCafeMarker = L.marker([lat, lng], { icon: museumIcon })
             gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
@@ -58,39 +69,48 @@ window.addEventListener('DOMContentLoaded', async function () {
         }
     }
 
-    let overlays ={
-        'Escape Room': escapeRoomGroup,
-        'Bowling Alley': bowlingAlleyGroup,
-        'Gaming Cafe': gamingCafeGroup,
-        'Movie Theater': movieTheaterGroup,
-        'Museum': museumGroup
-    }
-
-    L.control.layers(null, overlays).addTo(map);
-
-    document.querySelector('input[name=escapeRoomCheckbox]').addEventListener('change', function() {
-        if (document.querySelector('#escapeRoomCheckbox').checked) {
-        map.addLayer(escapeRoomGroup);
-        console.log('dog')
-        } else if (!document.querySelector('#escapeRoomCheckbox').checked) {
-        map.removeLayer(escapeRoomGroup);
-        console.log('hi')
-            }
-        })
+    
+    
+    
+    //function to on and off entertainment layers
+    function layerCheckbox(checkboxName,checkboxId,checkboxLayer){
+        document.querySelector(`input[name=${checkboxName}]`).addEventListener('change', function() {
+            if (document.querySelector(`#${checkboxId}`).checked) {
+            map.addLayer(checkboxLayer);
+            } else if (!document.querySelector(`#${checkboxId}`).checked) {
+            map.removeLayer(checkboxLayer);
+                }
+            })
+        }
+    
+    //add layers to layerCheckbox function
+    layerCheckbox('escapeRoomCheckbox','escapeRoomCheckbox',escapeRoomGroup); 
+    layerCheckbox('bowlingAlleyCheckbox','bowlingAlleyCheckbox',bowlingAlleyGroup);
+    layerCheckbox('gamingCafeCheckbox','gamingCafeCheckbox',gamingCafeGroup);
+    layerCheckbox('movieTheaterCheckbox','movieTheaterCheckbox',movieTheaterGroup);
+    layerCheckbox('museumCheckbox','museumCheckbox',museumGroup);
+    
+    //layers to be added to map upon page being loaded
+    escapeRoomGroup.addTo(map);
+    bowlingAlleyGroup.addTo(map);
+    gamingCafeGroup.addTo(map);
+    movieTheaterGroup.addTo(map);
+    museumGroup.addTo(map);
 
     //search function
     // document.querySelector('#search-btn').
     //     addEventListener('click', async function searchFunc() {
-    document.querySelector('#search-txt').
+    searchTxt = document.querySelector('#search-txt')
+    searchTxt.
         addEventListener('input', async function() {
             
-            //show clear button
-            let clearBtn = document.querySelector("#clear-btn")
-            if(clearBtn.style.display === 'none'){
-                clearBtn.style.display === 'block'
+            //show clear button and hide search button
+            document.querySelector("#clear-btn").style.display = "inline";
+            //hide clear button when searchbox empty
+            if (searchTxt.innerHTML.value === ""){
+            document.querySelector("#clear-btn").style.display = "none";
             }
-            
-            
+
             //clear existing markers from search result layer
             searchResultLayer.clearLayers();
 
@@ -104,6 +124,13 @@ window.addEventListener('DOMContentLoaded', async function () {
             //let center = map.getBounds().getCenter();
             let response = await search(searchQuery.value)
             //console.log(response.data.results)
+
+            //clear/reset search query whenever enter is pressed
+            searchQuery.addEventListener('keypress',function(enter){
+                if (enter.key === "Enter"){
+                 document.querySelector("#card-results").innerHTML="";
+                    }
+                })
 
             for (let eachResult of response.data.results) {
                 //console.log(eachResult)
@@ -187,10 +214,3 @@ window.addEventListener('DOMContentLoaded', async function () {
 
 })
 
-// document.querySelector('#escapeRoomCheckbox').addEventListener('click', function () {
-//     if (document.querySelector("escapeRoomCheckbox").checked) {
-//         map.addLayer(escapeRoomGroup);
-//     } else if (!document.querySelector("#hotels").checked) {
-//         map.removeLayer(escapeRoomGroup);
-//     }
-// })
