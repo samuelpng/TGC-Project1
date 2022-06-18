@@ -1,9 +1,21 @@
 #map {
-    height: 80vh;
+    height: 100vh;
 }
 
 #map-container {
     position: relative
+}
+
+#storage-container {
+    position:absolute;
+    top: 8.5px;
+    height:60px;
+    width: 540px;
+    background-color: rgba(230, 194, 36, 0.9);
+    z-index: 314158;
+    padding-top: 2px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #search-container {
@@ -15,8 +27,15 @@
     padding: 2px;
     padding-left: 12px;
     border-radius: 15px;
-    box-shadow: 0 0 20px 4px lightsteelblue;
+    /* box-shadow: 0 0 20px 4px lightsteelblue; */
     width: 285px
+}
+
+#layer-container {
+    position: absolute;
+    z-index: 314159;
+    top: 20px;
+    left: 320px;
 }
 
 #search-txt {
@@ -82,9 +101,9 @@
     margin: 10px;
 }
 
-/* #escapeRoomCheckbox{
+#escapeRoomCheckbox, #bowlingAlleyCheckbox, #gamingCafeCheckbox, #movieTheaterCheckbox, #museumCheckbox{
     display: none;
-} */
+}
 
 /* move zoom and self locate controls to the left */
 .leaflet-control-container { 

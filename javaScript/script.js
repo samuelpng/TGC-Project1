@@ -73,22 +73,24 @@ window.addEventListener('DOMContentLoaded', async function () {
     
     
     //function to on and off entertainment layers
-    function layerCheckbox(checkboxName,checkboxId,checkboxLayer){
+    function layerCheckbox(checkboxName,checkboxId,checkboxLayer, iconId){
         document.querySelector(`input[name=${checkboxName}]`).addEventListener('change', function() {
             if (document.querySelector(`#${checkboxId}`).checked) {
             map.addLayer(checkboxLayer);
+            document.querySelector(`#${iconId}`).style.opacity = 1.0;
             } else if (!document.querySelector(`#${checkboxId}`).checked) {
             map.removeLayer(checkboxLayer);
+            document.querySelector(`#${iconId}`).style.opacity = 0.5;
                 }
             })
         }
     
     //add layers to layerCheckbox function
-    layerCheckbox('escapeRoomCheckbox','escapeRoomCheckbox',escapeRoomGroup); 
-    layerCheckbox('bowlingAlleyCheckbox','bowlingAlleyCheckbox',bowlingAlleyGroup);
-    layerCheckbox('gamingCafeCheckbox','gamingCafeCheckbox',gamingCafeGroup);
-    layerCheckbox('movieTheaterCheckbox','movieTheaterCheckbox',movieTheaterGroup);
-    layerCheckbox('museumCheckbox','museumCheckbox',museumGroup);
+    layerCheckbox('escapeRoomCheckbox','escapeRoomCheckbox',escapeRoomGroup,'escapeRoomIcon'); 
+    layerCheckbox('bowlingAlleyCheckbox','bowlingAlleyCheckbox',bowlingAlleyGroup,'bowlingAlleyIcon');
+    layerCheckbox('gamingCafeCheckbox','gamingCafeCheckbox',gamingCafeGroup,'gamingCafeIcon');
+    layerCheckbox('movieTheaterCheckbox','movieTheaterCheckbox',movieTheaterGroup,'movieTheaterIcon');
+    layerCheckbox('museumCheckbox','museumCheckbox',museumGroup,'museumIcon');
     
     //layers to be added to map upon page being loaded
     escapeRoomGroup.addTo(map);
@@ -100,14 +102,14 @@ window.addEventListener('DOMContentLoaded', async function () {
     //search function
     // document.querySelector('#search-btn').
     //     addEventListener('click', async function searchFunc() {
-    searchTxt = document.querySelector('#search-txt')
-    searchTxt.
+    let searchQuery = document.querySelector('#search-txt')
+    searchQuery.
         addEventListener('input', async function() {
             
             //show clear button and hide search button
             document.querySelector("#clear-btn").style.display = "inline";
             //hide clear button when searchbox empty
-            if (searchTxt.innerHTML.value === ""){
+            if (searchQuery.innerHTML.value === ""){
             document.querySelector("#clear-btn").style.display = "none";
             }
 
@@ -120,8 +122,6 @@ window.addEventListener('DOMContentLoaded', async function () {
             //clear existing search cards
             document.querySelector("#card-results").innerHTML = "";
             
-            let searchQuery = document.querySelector('#search-txt');
-            //let center = map.getBounds().getCenter();
             let response = await search(searchQuery.value)
             //console.log(response.data.results)
 
@@ -162,10 +162,14 @@ window.addEventListener('DOMContentLoaded', async function () {
                         document.querySelector("#results").innerHTML = "";
                         document.querySelector("#card-results").appendChild(cardElement);  
                         let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
-                        marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                            marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                        
                         //map.flyTo(coordinate,15);
 
                         cardElement.addEventListener('mouseover',function(){
+                            searchResultLayer.clearLayers();
+                            let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                            marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
                             marker.openPopup()
                             map.flyTo(coordinate,15); 
                         })
@@ -174,8 +178,8 @@ window.addEventListener('DOMContentLoaded', async function () {
                             map.flyTo(coordinate,16); 
                             searchResultLayer.clearLayers();
                             document.querySelector("#card-results").innerHTML = "";
-                            let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
-                            marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                            // let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                            // marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
                             marker.openPopup()
                         })
 
