@@ -1,33 +1,3 @@
-window.addEventListener('DOMContentLoaded', async function(){
-    
-
-    // landingSearch.addEventListener('input', async function(){
-    //     let response = await search(landingSearch.value)
-    //     console.log(response)
-    //     document.querySelector("#landing-results").innerHTML=""
-    //     for (let eachResult of response.data.results) {
-            
-    //         //create markers and put on map
-    //         let coordinate = [eachResult.LATITUDE, eachResult.LONGITUDE];
-    //         //let marker = L.marker(coordinate).addTo(searchResultLayer);
-    //         //marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
-
-    //         //create the search result entry and display under search bar
-    //         let landingElement = document.createElement('div');
-    //         landingElement.className="landing-result";
-    //         landingElement.innerHTML = eachResult.SEARCHVAL;
-    //         document.querySelector("#landing-results").appendChild(landingElement);
-    //      }
-
-    // })
-    // landingSearch = document.querySelector("#landing-search");
-    // landingBtn = document.querySelector("#landing-btn");
-    // landingBtn.addEventListener('click', function(){
-    //     document.querySelector('#search-txt').value = landingSearch.value
-    // })
-
-})
-
 window.addEventListener('DOMContentLoaded', async function () {
     let map = createMap(1.3521, 103.8198)
     let locations = await indEnt();
@@ -126,23 +96,81 @@ window.addEventListener('DOMContentLoaded', async function () {
     movieTheaterGroup.addTo(map);
     museumGroup.addTo(map);
     
-    landingSearch = document.querySelector("#landing-search");
-    landingBtn = document.querySelector("#landing-btn");
-    // landingBtn.addEventListener('click', function(){
+    // let landingSearch = document.querySelector("#landing-search");
+    // let landingBtn = document.querySelector("#landing-btn");
+    
+    // landingBtn.addEventListener('click', async function(){
     //     document.querySelector('#search-txt').value = landingSearch.value
-    // })
+    //     let response = await search(landingSearch.value)
+    //     for (let eachResult of response.data.results){
+    //     let landingElement = document.createElement('div');
+    //             landingElement.className="landing-result";
+    //             landingElement.innerHTML = eachResult.SEARCHVAL;
+    //     }
+    //     document.querySelector("#landing-results").appendChild(landingElement)
+    //     })
     
 
     //search function
     // document.querySelector('#search-btn').
     //     addEventListener('click', async function searchFunc() {
+    
+        let landingSearch = document.querySelector("#landing-search");
+        let landingBtn = document.querySelector("#landing-btn");
+        document.querySelector("#landing-page").style.zIndex = "400000";
+    
+          landingBtn.addEventListener('click', async function(){
+            let response = await search(landingSearch.value)
+            document.querySelector('#search-txt').value = landingSearch.value
+            document.querySelector("#landing-page").style.zIndex = "-1";
+            for (let eachResult of response.data.results) {
+                
+                //create markers and put on map
+                let coordinate = [eachResult.LATITUDE, eachResult.LONGITUDE];
+    
+                let cardElement = document.createElement('div')
+                            cardElement.className="landing-result";
+                            cardElement.innerHTML=
+                            `<div class="card" style="width: 18rem;">
+                            <!--<img src="..." class="card-img-top" alt="...">-->
+                            <div class="card-body">
+                              <h5 class="card-title">${eachResult.SEARCHVAL}</h5>
+                              <p class="card-text">${eachResult.ADDRESS}</p>
+                              <a href="#" id="go-btn" class="btn btn-warning">Go</a>
+                            </div>
+                          </div>`
+                            document.querySelector("#card-results").appendChild(cardElement);  
+                            let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                                marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                                cardElement.addEventListener('mouseover',function(){
+                                    searchResultLayer.clearLayers();
+                                    let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                                    marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                                    marker.openPopup()
+                                    map.flyTo(coordinate,15); 
+                                })
+                                
+                                cardElement.addEventListener('click',function(){
+                                    map.flyTo(coordinate,16); 
+                                    //searchResultLayer.clearLayers();
+                                    document.querySelector("#card-results").innerHTML = "";
+                                    // let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                                    // marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                                    marker.openPopup()
+                                })
+             }
+            
+            })
+
+
     let searchQuery = document.querySelector('#search-txt')
 
     searchQuery.
         addEventListener('input', async function() {
             
-            //show clear button and hide search button
+            //show clear button
             document.querySelector("#clear-btn").style.display = "inline";
+
             //hide clear button when searchbox empty
             if (searchQuery.innerHTML.value === ""){
             document.querySelector("#clear-btn").style.display = "none";
