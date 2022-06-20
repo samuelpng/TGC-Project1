@@ -1,4 +1,32 @@
+window.addEventListener('DOMContentLoaded', async function(){
+    
 
+    // landingSearch.addEventListener('input', async function(){
+    //     let response = await search(landingSearch.value)
+    //     console.log(response)
+    //     document.querySelector("#landing-results").innerHTML=""
+    //     for (let eachResult of response.data.results) {
+            
+    //         //create markers and put on map
+    //         let coordinate = [eachResult.LATITUDE, eachResult.LONGITUDE];
+    //         //let marker = L.marker(coordinate).addTo(searchResultLayer);
+    //         //marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+
+    //         //create the search result entry and display under search bar
+    //         let landingElement = document.createElement('div');
+    //         landingElement.className="landing-result";
+    //         landingElement.innerHTML = eachResult.SEARCHVAL;
+    //         document.querySelector("#landing-results").appendChild(landingElement);
+    //      }
+
+    // })
+    // landingSearch = document.querySelector("#landing-search");
+    // landingBtn = document.querySelector("#landing-btn");
+    // landingBtn.addEventListener('click', function(){
+    //     document.querySelector('#search-txt').value = landingSearch.value
+    // })
+
+})
 
 window.addEventListener('DOMContentLoaded', async function () {
     let map = createMap(1.3521, 103.8198)
@@ -70,8 +98,7 @@ window.addEventListener('DOMContentLoaded', async function () {
     }
 
     
-    
-    
+
     //function to on and off entertainment layers
     function layerCheckbox(checkboxName,checkboxId,checkboxLayer, iconId){
         document.querySelector(`input[name=${checkboxName}]`).addEventListener('change', function() {
@@ -98,11 +125,19 @@ window.addEventListener('DOMContentLoaded', async function () {
     gamingCafeGroup.addTo(map);
     movieTheaterGroup.addTo(map);
     museumGroup.addTo(map);
+    
+    landingSearch = document.querySelector("#landing-search");
+    landingBtn = document.querySelector("#landing-btn");
+    // landingBtn.addEventListener('click', function(){
+    //     document.querySelector('#search-txt').value = landingSearch.value
+    // })
+    
 
     //search function
     // document.querySelector('#search-btn').
     //     addEventListener('click', async function searchFunc() {
     let searchQuery = document.querySelector('#search-txt')
+
     searchQuery.
         addEventListener('input', async function() {
             
@@ -144,6 +179,7 @@ window.addEventListener('DOMContentLoaded', async function () {
                 let resultElement = document.createElement('div');
                 resultElement.className="search-result";
                 resultElement.innerHTML = eachResult.SEARCHVAL;
+                
 
                 //create card of search results when user presses enter
                 searchQuery.addEventListener('keypress',function(enter){
@@ -176,7 +212,7 @@ window.addEventListener('DOMContentLoaded', async function () {
                         
                         cardElement.addEventListener('click',function(){
                             map.flyTo(coordinate,16); 
-                            searchResultLayer.clearLayers();
+                            //searchResultLayer.clearLayers();
                             document.querySelector("#card-results").innerHTML = "";
                             // let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
                             // marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
@@ -202,7 +238,8 @@ window.addEventListener('DOMContentLoaded', async function () {
 
 
                 document.querySelector("#results").appendChild(resultElement);
-                
+
+
                 //clear search when clear button is pressed                
                 document.querySelector('#clear-btn').addEventListener('click',function(){
                     document.querySelector("#results").innerHTML = "";
@@ -217,4 +254,6 @@ window.addEventListener('DOMContentLoaded', async function () {
         })
 
 })
+
+//landing page
 
