@@ -39,7 +39,14 @@ window.addEventListener('DOMContentLoaded', async function () {
 
         if (place.categories[0].name == 'Escape Room') {
             let escapeRoomMarker = L.marker([lat, lng], { icon: ecapeRoomIcon })
-            escapeRoomMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+            escapeRoomMarker.bindPopup(`<div class="card" style="width: 18rem;">
+            <!--<img src="..." class="card-img-top" alt="...">-->
+            <div class="card-body">
+              <h3 class="card-title">${place.name}</h3>
+              <h5 class="card-text">${place.categories[0].name}
+              ${place.location.formatted_address}</h5>
+            </div>
+          </div>`)
             //locationDetails.hours.regular[0].open ? ", " + locationDetails.hours.regular[0].open : ""
             //result.location.address_extended ? ", " + result.location.address_extended: ""
             .addTo(escapeRoomGroup)
@@ -47,22 +54,50 @@ window.addEventListener('DOMContentLoaded', async function () {
                         
         } else if (place.categories[0].name == 'Bowling Alley') {
             let bowlingAlleyMarker = L.marker([lat, lng], { icon: bowlingAlleyIcon })
-            bowlingAlleyMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+            bowlingAlleyMarker.bindPopup(`<div class="card" style="width: 18rem;">
+            <!--<img src="..." class="card-img-top" alt="...">-->
+            <div class="card-body">
+              <h3 class="card-title">${place.name}</h3>
+              <h5 class="card-text">${place.categories[0].name}
+              ${place.location.formatted_address}</h5>
+            </div>
+          </div>`)
             .addTo(bowlingAlleyGroup)
             
         } else if (place.categories[0].name == 'Gaming Cafe') {
             let gamingCafeMarker = L.marker([lat, lng], { icon: gamingCafeIcon })
-            gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+            gamingCafeMarker.bindPopup(`<div class="card" style="width: 18rem;">
+            <!--<img src="..." class="card-img-top" alt="...">-->
+            <div class="card-body">
+              <h3 class="card-title">${place.name}</h3>
+              <h5 class="card-text">${place.categories[0].name}
+              ${place.location.formatted_address}</h5>
+            </div>
+          </div>`)
             .addTo(gamingCafeGroup)
 
         }else if (place.categories[0].name == 'Movie Theater') {
             let gamingCafeMarker = L.marker([lat, lng], { icon: movieTheaterIcon })
-            gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+            gamingCafeMarker.bindPopup(`<div class="card" style="width: 18rem;">
+            <!--<img src="..." class="card-img-top" alt="...">-->
+            <div class="card-body">
+              <h3 class="card-title">${place.name}</h3>
+              <h5 class="card-text">${place.categories[0].name}
+              ${place.location.formatted_address}</h5>
+            </div>
+          </div>`)
             .addTo(movieTheaterGroup)
 
         }else if (place.categories[0].name == 'Museum') {
             let gamingCafeMarker = L.marker([lat, lng], { icon: museumIcon })
-            gamingCafeMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
+            gamingCafeMarker.bindPopup(`<div class="card" style="width: 18rem;">
+            <!--<img src="..." class="card-img-top" alt="...">-->
+            <div class="card-body">
+              <h3 class="card-title">${place.name}</h3>
+              <h5 class="card-text">${place.categories[0].name}
+              ${place.location.formatted_address}</h5>
+            </div>
+          </div>`)
             .addTo(museumGroup)
         }
     }
@@ -121,6 +156,7 @@ window.addEventListener('DOMContentLoaded', async function () {
     
           landingBtn.addEventListener('click', async function(){
             let response = await search(landingSearch.value)
+            // document.querySelector("#clear-btn").style.display = "inline"
             document.querySelector('#search-txt').value = landingSearch.value
             document.querySelector("#landing-page").style.zIndex = "-1";
             for (let eachResult of response.data.results) {
@@ -225,8 +261,8 @@ window.addEventListener('DOMContentLoaded', async function () {
                       </div>`
                         document.querySelector("#results").innerHTML = "";
                         document.querySelector("#card-results").appendChild(cardElement);  
-                        let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
-                            marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                        // let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                        //     marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
                         
                         //map.flyTo(coordinate,15);
 
@@ -242,8 +278,8 @@ window.addEventListener('DOMContentLoaded', async function () {
                             map.flyTo(coordinate,16); 
                             //searchResultLayer.clearLayers();
                             document.querySelector("#card-results").innerHTML = "";
-                            // let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
-                            // marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
+                            let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
+                            marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
                             marker.openPopup()
                         })
 
@@ -272,6 +308,7 @@ window.addEventListener('DOMContentLoaded', async function () {
                 document.querySelector('#clear-btn').addEventListener('click',function(){
                     document.querySelector("#results").innerHTML = "";
                     document.querySelector("#card-results").innerHTML = "";
+                    // document.querySelector("#landing-search").value="";
                     searchQuery.value="";
                     searchResultLayer.clearLayers();
                 
@@ -283,5 +320,4 @@ window.addEventListener('DOMContentLoaded', async function () {
 
 })
 
-//landing page
 

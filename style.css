@@ -1,61 +1,3 @@
-/* #landing-page {
-    position: relative;
-    overflow-x: hidden;
-    color: goldenrod;
-    height:100vh;
-    z-index: 100000
-}    
-
-.navbar{
-    background: rgba(0,0,0,0.6);
-    height: 50px
-}
-
-.video-background{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0, 0.5)
-} 
-
-#background-video{
-    min-height: 100%;
-    min-width: 100%;
-    position:absolute;
-    bottom: 0;
-    left: 0;
-}
-
-#landing-txt-container{
-    background-color: rgba(255, 255, 255, 0.7);
-    position:absolute;
-    height:200px;
-    width:500px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.caption{
-    position: absolute;
-    width:100%;
-    top:400px;
-    padding:100;
-    color: white;
-}
-
-.caption h1{
-    font-size: 2.7rem;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    text-shadow: .1rem .1rem .8rem black
-}
-
-.caption h3{
-    font-size: 2rem;
-    text-shadow: .1rem .1rem .5rem black
-} */
-
 #landing-page-container{
     position:relative;
 }
@@ -97,21 +39,27 @@
     z-index:400001;
     color: white;
     text-shadow: 1px 0 0 rgb(178, 189, 57), 0 -1px 0 rgb(178, 189, 57), 0 1px 0 #000, -1px 0 0 #000;
-    /* background-color: rgba(230, 194, 36, 0.8);
+    background-color: rgba(112, 224, 226, 0.3);
     padding:30px;
-    border-radius: 20px; */
+    border-radius: 20px;
 }
 
-.landing-txt h2{
-    font-size:2.7rem;
-    font-weight: 800;
-    line-height:1em;
+#logo{
+    width: 300px;
 }
 
 .landing-txt h3{
     font-size:2rem;
     font-weight: 700;
     line-height:1em;
+}
+
+.landing-txt h4{
+    font-size:1.5rem;
+    margin: 20px 0;
+    font-weight:400;
+    max-width:700px;
+    color:darkorange
 }
 
 .landing-txt p{
@@ -213,6 +161,7 @@
     left: 320px;
 }
 
+
 #search-txt {
     line-height: 30px;
     outline: none;
@@ -241,6 +190,14 @@
     font-size:13px;
 }
 
+.search-result{
+    cursor: pointer
+}
+
+#results div:hover{
+    background-color: rgba(228, 202, 89, 0.5);
+}
+
 .fa-magnifying-glass, .fa-x {
     color: grey;
 }
@@ -252,7 +209,7 @@
 
 #card-results {
     overflow-y: scroll;
-    max-height:800px;
+    max-height: 80vh;
 }
 
 .card {
@@ -281,23 +238,126 @@
     position: absolute; right: 56px 
 }
 
-@media screen and (max-width: 768px) {
-    /* #landing-page-container{
-     
-        width: 100vw;
-        height: 100vh;
-        top:0;
-        right:0;
-        left:0;
-        bottom:0;
-        padding:0
-    }    */
+#form-icon{
+    position: absolute;
+    z-index: 314159;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    padding:0;
+    border:none;
+    background-color:transparent
+}
 
-    /* #landing-page {
-        padding: 30px;
-        width: 100%;
-        height: 100%;
-    } */
+#formIcon{
+    width:50px;
+}
+
+#form-container{
+    position: absolute;
+    z-index: 314159;
+    height:600px;
+    width:400px;
+    background-color: goldenrod;
+    opacity:0.9;
+    bottom:50px;
+    right:50px;
+    padding: 30px 35px  30px;
+    border-radius:20px;
+    display:none
+}
+
+#form{
+    top:50px;
+}
+
+#form h1{
+    color: black;
+    text-align:center
+}
+
+
+#form-btn{
+    padding:10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    width:100%;
+    border:none
+}
+
+.input-control{
+    display:flex;
+    flex-direction:column;
+    padding: 0.3em
+}
+
+.input-control input:focus{
+    outline:0;
+}
+
+.input-control textarea:focus{
+    outline:0;
+}
+
+.input-control input{
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control textarea{
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+div.error {
+    color: rgb(211, 22, 22);
+    font-size:13px
+}
+
+#close-form{
+    position: absolute;
+    top:10px;
+    right:10px;
+    background-color:transparent;
+    border-radius: 20px;
+    border-color: grey
+}
+
+.form-x {
+    color: grey
+}
+
+
+
+/* #message{
+    height:150px
+}
+
+.input-control.success input{
+    border-color: turquoise
+}
+
+.input-control.error input{
+    border-color:red
+}
+
+.input-control .error{
+    color:red;
+    font-size: 9px;
+    height:13px
+} */
+
+
+@media screen and (max-width: 768px) {
 
     #bgvid {
         position:absolute;
@@ -307,7 +367,7 @@
     }
 
     .landing-txt {
-        width: 100%;
+        width: 300px;
         height: 100%;
     }
 
@@ -318,9 +378,16 @@
     }
     
     .landing-txt h3{
-        font-size:1.0rem;
+        font-size:1.7rem;
         font-weight: 500;
         line-height:1em;
+    }
+
+    .landing-txt h4{
+        font-size:1.0rem;
+        margin: 20px 0;
+        font-weight:400;
+        max-width:700px;
     }
 
     .landing-txt p {
@@ -352,6 +419,39 @@
     #card-results{
         max-height:80vh
     }
+    #form-icon{
+        position: absolute;
+        z-index: 314159;
+        bottom:5px;
+        left:20px;
+        width:35px;
+        height:35px;
+        padding:0;
+        border:none;
+        background-color:transparent
+    }
+    #formIcon{
+        width:35px;
+    }
+
+    #form-container{
+        position: absolute;
+        z-index: 314159;
+        height:600px;
+        width:330px;
+        background-color: goldenrod;
+        opacity:0.9;
+        bottom:60px;
+        left: 10px;
+        padding: 30px 30px 30px;
+        border-radius:20px;
+        display:none
+    }
+
+    #logo{
+        width:200px
+    }
+    
 }
 
 
