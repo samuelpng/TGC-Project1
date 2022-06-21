@@ -131,32 +131,13 @@ window.addEventListener('DOMContentLoaded', async function () {
     movieTheaterGroup.addTo(map);
     museumGroup.addTo(map);
     
-    // let landingSearch = document.querySelector("#landing-search");
-    // let landingBtn = document.querySelector("#landing-btn");
-    
-    // landingBtn.addEventListener('click', async function(){
-    //     document.querySelector('#search-txt').value = landingSearch.value
-    //     let response = await search(landingSearch.value)
-    //     for (let eachResult of response.data.results){
-    //     let landingElement = document.createElement('div');
-    //             landingElement.className="landing-result";
-    //             landingElement.innerHTML = eachResult.SEARCHVAL;
-    //     }
-    //     document.querySelector("#landing-results").appendChild(landingElement)
-    //     })
-    
-
-    //search function
-    // document.querySelector('#search-btn').
-    //     addEventListener('click', async function searchFunc() {
-    
         let landingSearch = document.querySelector("#landing-search");
         let landingBtn = document.querySelector("#landing-btn");
         document.querySelector("#landing-page").style.zIndex = "400000";
     
           landingBtn.addEventListener('click', async function(){
             let response = await search(landingSearch.value)
-            // document.querySelector("#clear-btn").style.display = "inline"
+            document.querySelector("#clear-btn").style.display = "inline"
             document.querySelector('#search-txt').value = landingSearch.value
             document.querySelector("#landing-page").style.zIndex = "-1";
             for (let eachResult of response.data.results) {
@@ -199,7 +180,20 @@ window.addEventListener('DOMContentLoaded', async function () {
             })
 
 
+    //clear search when clear button is pressed                
+    document.querySelector('#clear-btn').addEventListener('click',function(){
+        console.log("clear btn clicked")
+        document.querySelector("#results").innerHTML = "";
+        document.querySelector("#card-results").innerHTML = "";
+        // document.querySelector("#landing-search").value="";
+        searchQuery.value="";
+        searchResultLayer.clearLayers();
+    })
+
+
     let searchQuery = document.querySelector('#search-txt')
+
+        
 
     searchQuery.
         addEventListener('input', async function() {
@@ -230,6 +224,8 @@ window.addEventListener('DOMContentLoaded', async function () {
                  document.querySelector("#card-results").innerHTML="";
                     }
                 })
+
+               
 
             for (let eachResult of response.data.results) {
                 //console.log(eachResult)
@@ -302,19 +298,6 @@ window.addEventListener('DOMContentLoaded', async function () {
 
 
                 document.querySelector("#results").appendChild(resultElement);
-
-
-                //clear search when clear button is pressed                
-                document.querySelector('#clear-btn').addEventListener('click',function(){
-                    document.querySelector("#results").innerHTML = "";
-                    document.querySelector("#card-results").innerHTML = "";
-                    // document.querySelector("#landing-search").value="";
-                    searchQuery.value="";
-                    searchResultLayer.clearLayers();
-                
-                
-                })
-
             } 
         })
 
