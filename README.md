@@ -125,13 +125,12 @@ Icons and images
 
 ## 9. Credits
 
-
-
 ### Icons and images:
 
 1. [Flaticon](https://www.flaticon.com/) - Images used to customise layer and marker icons
 2. [FreeLogoDesign](https://www.freelogodesign.org/) - To create logo for landing page
 3. [YouTube](https://www.youtube.com) - To grab video for landing page
+4. [Netlify](https://www.netlify.com/) - For deployment of website
 
 ### Datasets:
 
