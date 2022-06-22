@@ -83,7 +83,7 @@ Content
 ## 6. Testing
 
 ### Test cases
-The test cases can be found here
+The test cases can be found [here](./BoredGoWhere-Test Case.pdf)
 
 ### Testing for mobile responsiveness.
 !!!!!!!!!!!!!!!!!!!!
@@ -117,7 +117,7 @@ Icons and images
 
 ### Datasets:
 
-1. [Foursquare] (https://developer.foursquare.com/reference/place-search)
+1. [Foursquare](https://developer.foursquare.com/reference/place-search)
     - Data used to plot markers for entertainment locations on the map, and to retrieve details for each location
 
 2. [OneMap](https://www.onemap.gov.sg/docs/)
