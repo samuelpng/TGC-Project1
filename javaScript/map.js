@@ -12,14 +12,6 @@ function createMap(lat, lng) {
         //Do not remove this attribution
         attribution: '<img src="https://www.onemap.gov.sg/docs/maps/images/oneMap64-01.png" style="height:20px;width:20px;"/> OneMap | Map data &copy; contributors, <a href="http://SLA.gov.sg">Singapore Land Authority</a>'
     }).addTo(map);
-    // L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-    // maxZoom: 18,
-    // id: 'mapbox/streets-v11',  // style of the tiles
-    // tileSize: 512,
-    // zoomOffset: -1,
-    // accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
-    // }).addTo(map);
     return map;
 }
 
@@ -73,5 +65,7 @@ const searchResultIcon = L.icon({
     popupAnchor: [-3, -76]
 })
 
-//hide search button
+//hide clear button
+
+
 document.querySelector("#clear-btn").style.display = "none";

@@ -1,3 +1,4 @@
+/* landing page CSS */
 #landing-page-container{
     position:relative;
 }
@@ -13,7 +14,7 @@
     align-items: center;
     background: #111;
     transition: 0.5s;
-    /* z-index: 400000; */
+    z-index: 400000;
 }
 
 #bgvid{
@@ -121,6 +122,7 @@
     width: 190px
 }
 
+/* Map page CSS */
 #map {
     height: 100vh;
 }
@@ -150,7 +152,6 @@
     padding: 2px;
     padding-left: 12px;
     border-radius: 15px;
-    /* box-shadow: 0 0 20px 4px lightsteelblue; */
     width: 285px
 }
 
@@ -169,10 +170,6 @@
     background-color: transparent;
 }
 
-/* input:focus{
-    outline-style: none;
-    box-shadow: none
-} */
 
 #search-btn {
     height: 35px;
@@ -238,6 +235,7 @@
     position: absolute; right: 56px 
 }
 
+/* Form CSS */
 #form-icon{
     position: absolute;
     z-index: 314159;
@@ -257,9 +255,8 @@
 #form-container{
     position: absolute;
     z-index: 314159;
-    height:600px;
+    height:630px;
     width:400px;
-    /* background-color: goldenrod; */
     background: linear-gradient(
     to bottom,
     rgb(249, 239, 125) 0%,
@@ -278,8 +275,8 @@
     top:50px;
 }
 
-#form h1{
-    color: black;
+#form h2{
+    color: rgb(13, 103, 133);
     text-align:center
 }
 
@@ -343,26 +340,34 @@ div.error {
 }
 
 
+.leaflet-touch .leaflet-bar a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(236, 190, 73, 0.9);
+    color: rgb(31, 129, 161)
+}
 
-/* #message{
+#message{
     height:150px
 }
 
-.input-control.success input{
-    border-color: turquoise
+.radio-control{
+    padding-top:7px;
+    padding-bottom: 7px;
 }
 
-.input-control.error input{
-    border-color:red
+.radio-txt{
+    font-size:14px;
+    padding-right:15px
 }
 
-.input-control .error{
-    color:red;
-    font-size: 9px;
-    height:13px
-} */
+.radio-btn{
+    width: 0.7em; 
+    height: 0.7em;
+}
 
-
+/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
 
     #bgvid {
@@ -409,13 +414,31 @@ div.error {
         position:fixed;
         bottom:0%;
         top:auto;
+        left:40vw;
+        background-color:goldenrod;
+        width:60%;
+        display:flex;
+        justify-content: center;
+        padding-top: 10px;
+        height:55px;
+        justify-content: space-between;
+    }    
+
+    #mobile-footer-container{
+        position:fixed;
+        bottom:0%;
+        top:auto;
         left:0px;
         background-color:goldenrod;
         width:100%;
         display:flex;
         justify-content: center;
         padding-top: 10px;
+        height:55px;
+        justify-content: right;
+        z-index: 314156
     }    
+
 
     #search-container{
         background-color: white;
@@ -429,7 +452,7 @@ div.error {
     #form-icon{
         position: absolute;
         z-index: 314159;
-        bottom:5px;
+        bottom:12px;
         left:20px;
         width:35px;
         height:35px;
@@ -446,13 +469,12 @@ div.error {
         z-index: 314159;
         height:600px;
         width:330px;
-        background-color: goldenrod;
-        opacity:0.9;
+        opacity:1.0;
         bottom:60px;
         left: 10px;
         padding: 30px 30px 30px;
         border-radius:20px;
-        display:none
+        display:none;
     }
 
     #logo{

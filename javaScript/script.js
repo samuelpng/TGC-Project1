@@ -24,81 +24,41 @@ window.addEventListener('DOMContentLoaded', async function () {
         let lat = place.geocodes.main.latitude;
         let lng = place.geocodes.main.longitude;
 
-        //inputting additional details from foursquare
-        // let placeId = place.fsq_id
-        // let locationDetails = await entDetails(placeId)
-        //console.log(locationDetails)
-
-        //locationDetails.hours.regular[0].open ? ", " + locationDetails.hours.regular[0].open : ""
-            //result.location.address_extended ? ", " + result.location.address_extended: "
-        // function addMarkerToLayer(lat,lng,iconName,groupName){
-        //     let escapeRoomMarker = L.marker([lat, lng], { icon: iconName })
-        //     escapeRoomMarker.bindPopup(`<h4>${place.name}</h4><p>${place.categories[0].name}, ${place.location.formatted_address}</p>`)
-        //     .addTo(groupName)
-        // }
+        //marker layer fnction
+        function addMarkerToLayer(markerName, groupName, category){
+          markerName.bindPopup(`<div class="card" style="width: 18rem;">
+          <!--<img src="..." class="card-img-top" alt="...">-->
+          <div class="card-body">
+            <h3 class="card-title">${place.name}</h3>
+            <h5 class="card-text">${place.categories[0].name}
+            ${place.location.formatted_address}</h5>
+            <h5 class="card-text">Category: ${category}</h5>
+          </div>
+        </div>`)
+          .addTo(groupName)
+        }
 
         if (place.categories[0].name == 'Escape Room') {
+
             let escapeRoomMarker = L.marker([lat, lng], { icon: ecapeRoomIcon })
-            escapeRoomMarker.bindPopup(`<div class="card" style="width: 18rem;">
-            <!--<img src="..." class="card-img-top" alt="...">-->
-            <div class="card-body">
-              <h3 class="card-title">${place.name}</h3>
-              <h5 class="card-text">${place.categories[0].name}
-              ${place.location.formatted_address}</h5>
-            </div>
-          </div>`)
-            //locationDetails.hours.regular[0].open ? ", " + locationDetails.hours.regular[0].open : ""
-            //result.location.address_extended ? ", " + result.location.address_extended: ""
-            .addTo(escapeRoomGroup)
-            // addMarkerToLayer()
+            addMarkerToLayer(escapeRoomMarker, escapeRoomGroup, 'Escape Room')
                         
         } else if (place.categories[0].name == 'Bowling Alley') {
-            let bowlingAlleyMarker = L.marker([lat, lng], { icon: bowlingAlleyIcon })
-            bowlingAlleyMarker.bindPopup(`<div class="card" style="width: 18rem;">
-            <!--<img src="..." class="card-img-top" alt="...">-->
-            <div class="card-body">
-              <h3 class="card-title">${place.name}</h3>
-              <h5 class="card-text">${place.categories[0].name}
-              ${place.location.formatted_address}</h5>
-            </div>
-          </div>`)
-            .addTo(bowlingAlleyGroup)
+          let bowlingAlleyMarker = L.marker([lat, lng], { icon: bowlingAlleyIcon })
+          addMarkerToLayer(bowlingAlleyMarker, bowlingAlleyGroup, 'Bowling Alley')
             
         } else if (place.categories[0].name == 'Gaming Cafe') {
-            let gamingCafeMarker = L.marker([lat, lng], { icon: gamingCafeIcon })
-            gamingCafeMarker.bindPopup(`<div class="card" style="width: 18rem;">
-            <!--<img src="..." class="card-img-top" alt="...">-->
-            <div class="card-body">
-              <h3 class="card-title">${place.name}</h3>
-              <h5 class="card-text">${place.categories[0].name}
-              ${place.location.formatted_address}</h5>
-            </div>
-          </div>`)
-            .addTo(gamingCafeGroup)
+          let gamingCafeMarker = L.marker([lat, lng], { icon: gamingCafeIcon })
+            addMarkerToLayer(gamingCafeMarker, gamingCafeGroup, 'Gaming Cafe')
 
         }else if (place.categories[0].name == 'Movie Theater') {
-            let gamingCafeMarker = L.marker([lat, lng], { icon: movieTheaterIcon })
-            gamingCafeMarker.bindPopup(`<div class="card" style="width: 18rem;">
-            <!--<img src="..." class="card-img-top" alt="...">-->
-            <div class="card-body">
-              <h3 class="card-title">${place.name}</h3>
-              <h5 class="card-text">${place.categories[0].name}
-              ${place.location.formatted_address}</h5>
-            </div>
-          </div>`)
-            .addTo(movieTheaterGroup)
+          let movieTheaterMarker = L.marker([lat, lng], { icon: movieTheaterIcon })
+            addMarkerToLayer(movieTheaterMarker, movieTheaterGroup, 'Movie Theater')
 
         }else if (place.categories[0].name == 'Museum') {
-            let gamingCafeMarker = L.marker([lat, lng], { icon: museumIcon })
-            gamingCafeMarker.bindPopup(`<div class="card" style="width: 18rem;">
-            <!--<img src="..." class="card-img-top" alt="...">-->
-            <div class="card-body">
-              <h3 class="card-title">${place.name}</h3>
-              <h5 class="card-text">${place.categories[0].name}
-              ${place.location.formatted_address}</h5>
-            </div>
-          </div>`)
-            .addTo(museumGroup)
+          let museumMarker = L.marker([lat, lng], { icon: museumIcon })
+            addMarkerToLayer(museumMarker, museumGroup, 'Museum')
+
         }
     }
 
@@ -130,7 +90,8 @@ window.addEventListener('DOMContentLoaded', async function () {
     gamingCafeGroup.addTo(map);
     movieTheaterGroup.addTo(map);
     museumGroup.addTo(map);
-    
+        
+        //Bring users to map upon search in landing page
         let landingSearch = document.querySelector("#landing-search");
         let landingBtn = document.querySelector("#landing-btn");
         document.querySelector("#landing-page").style.zIndex = "400000";
@@ -169,10 +130,7 @@ window.addEventListener('DOMContentLoaded', async function () {
                                 
                                 cardElement.addEventListener('click',function(){
                                     map.flyTo(coordinate,16); 
-                                    //searchResultLayer.clearLayers();
                                     document.querySelector("#card-results").innerHTML = "";
-                                    // let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
-                                    // marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
                                     marker.openPopup()
                                 })
              }
@@ -193,8 +151,7 @@ window.addEventListener('DOMContentLoaded', async function () {
 
     let searchQuery = document.querySelector('#search-txt')
 
-        
-
+    
     searchQuery.
         addEventListener('input', async function() {
             
@@ -216,7 +173,6 @@ window.addEventListener('DOMContentLoaded', async function () {
             document.querySelector("#card-results").innerHTML = "";
             
             let response = await search(searchQuery.value)
-            //console.log(response.data.results)
 
             //clear/reset search query whenever enter is pressed
             searchQuery.addEventListener('keypress',function(enter){
@@ -232,9 +188,7 @@ window.addEventListener('DOMContentLoaded', async function () {
 
                 //create markers and put on map
                 let coordinate = [eachResult.LATITUDE, eachResult.LONGITUDE];
-                //let marker = L.marker(coordinate).addTo(searchResultLayer);
-                //marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
-
+               
                 //create the search result entry and display under searchbar
                 let resultElement = document.createElement('div');
                 resultElement.className="search-result";
@@ -257,11 +211,8 @@ window.addEventListener('DOMContentLoaded', async function () {
                       </div>`
                         document.querySelector("#results").innerHTML = "";
                         document.querySelector("#card-results").appendChild(cardElement);  
-                        // let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
-                        //     marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
-                        
-                        //map.flyTo(coordinate,15);
-
+                      
+                        //marker popup when mouse over cards
                         cardElement.addEventListener('mouseover',function(){
                             searchResultLayer.clearLayers();
                             let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
@@ -270,9 +221,9 @@ window.addEventListener('DOMContentLoaded', async function () {
                             map.flyTo(coordinate,15); 
                         })
                         
+                        //zoom in to clicked location
                         cardElement.addEventListener('click',function(){
                             map.flyTo(coordinate,16); 
-                            //searchResultLayer.clearLayers();
                             document.querySelector("#card-results").innerHTML = "";
                             let marker = L.marker(coordinate, { icon: searchResultIcon }).addTo(searchResultLayer);
                             marker.bindPopup(`<div><p><b>${eachResult.SEARCHVAL}<b></p></div>`)
@@ -280,9 +231,6 @@ window.addEventListener('DOMContentLoaded', async function () {
                         })
 
 
-                        // document.querySelector('#go-btn').addEventListener('click',function(){
-                        //     map.flyTo(coordinate,16);
-                        // })
                     }
                     
                 })
@@ -302,5 +250,4 @@ window.addEventListener('DOMContentLoaded', async function () {
         })
 
 })
-
 

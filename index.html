@@ -35,13 +35,12 @@
             <video id="bgvid" src="landing-page.mp4" muted loop autoplay></video>
             <div class="overlay"></div>
             <div class="landing-txt">
-                <img src="pictures/boredgowhere-logo.png" id="logo" width="300px"><br/><br/>
-                <!-- <h2>BORED GO WHERE</h2> -->
+                <img src="pictures/boredgowhere-logo.png" id="logo" width="300px"><br /><br />
                 <h3>Feeling Bored? Don't know where to go?</h3>
-                <h3>We got you!</h3>                
+                <h3>We got you!</h3>
                 <h4>Simply Start By Inputting the location You Will be at Below</h4>
                 <div id="landing-search-container">
-                    <input type="text" id="landing-search" />
+                    <input type="text" id="landing-search" placeholder="Search by address.." />
                     <button id="landing-btn"><i class="fa-solid fa-magnifying-glass fa-xl"
                             id="landing-btn-icon"></i></button>
                     <div id="landing-results"></div>
@@ -54,7 +53,7 @@
         <div id='map'></div>
         <div id="search-container">
             <button id="search-btn"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
-            <input type="text" id="search-txt" placeholder="Find a place" />
+            <input type="text" id="search-txt" placeholder="Search by address.." />
             <button id="clear-btn"><i class="fa-solid fa-x fa-xl"></i></button>
             <div id="results"></div>
             <div id="card-results"></div>
@@ -76,29 +75,41 @@
             <label for="museumCheckbox" class="iconCheckbox"><img src="pictures/museum.png" id="museumIcon"
                     width="35px" /></label>
         </div>
+        <div id="mobile-footer-container"></div>
         <div id="storage-container"></div>
         <button id="form-icon"><img src="pictures/message.png" id="formIcon" width="35px" /></button>
         <div id="form-container">
             <button id="close-form"><i class="fa-solid fa-x fa-l form-x"></i></button>
             <div id="form">
-                <h1>Contact Us</h1>
-                <ul id="errors" style="display:none"></ul>
+                <h2>Contact Us</h2>
                 <div class="input-control">
                     <label for="form-name">Name</label>
-                    <input type="text" id="form-name" placeholder="Enter your first and last name"/>
-                    <div id="nameError" class="error"></div>
+                    <input type="text" id="form-name" placeholder="Enter your first and last name" />
+                    <div id="nameError" class="error" style="opacity:0">Name is required</div>
                 </div>
                 <div class="input-control">
                     <label for="form-email">Email</label>
-                    <input type="text" id="form-email" placeholder="Enter your emal address"/>
-                    <div id="emailError" class="error"></div>
+                    <input type="text" id="form-email" placeholder="Enter your emal address" />
+                    <div id="emailError" class="error" style="opacity:0">Please provide a valid email address</div>
+                </div>
+                <div class="radio-control">
+                    Reason for message:
+                    <br>
+                    <input type="radio" id="enquiry" name="contact-us" class="radio-btn">
+                    <label for="enquiry" class="radio-txt">Enquiry</label>
+                    <input type="radio" id="suggestions" name="contact-us" class="radio-btn">
+                    <label for="suggestions" class="radio-txt">Suggestions</label>
+                    <input type="radio" id="others" name="contact-us" class="radio-btn">
+                    <label for="others" class="radio-txt">Others</label>
+                    <div id="radioError" class="error" style="opacity:0">Please check at least one option</div>
                 </div>
                 <div class="input-control">
                     <label for-="form-message">Message</label>
-                    <textarea rows="6" wrap="virtual" id="form-message" placeholder="Enter your message here"></textarea>
-                    <div id="messageError" class="error"></div>
+                    <textarea rows="6" wrap="virtual" id="form-message"
+                        placeholder="Enter your message here"></textarea>
+                    <div id="messageError" class="error" style="opacity:0">Your message must be at least 5 characters long
+                    </div>
                 </div>
-                <br/>
                 <button type="submit" id="form-btn">Submit</button>
             </div>
         </div>

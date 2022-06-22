@@ -8378,6 +8378,1553 @@
         "name": "Fuk Tak Chi Museum",
         "related_places": {},
         "timezone": "Asia/Singapore"
+      },{
+        "fsq_id": "4b058810f964a52072af22e3",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2223,
+        "geocodes": {
+          "main": {
+            "latitude": 1.362343,
+            "longitude": 103.974034
+          }
+        },
+        "link": "/v3/places/4b058810f964a52072af22e3",
+        "location": {
+          "address": "1000 Upper Changi Rd. N",
+          "country": "SG",
+          "formatted_address": "1000 Upper Changi Rd. N, 507707",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "507707"
+        },
+        "name": "Changi Prison Museum & Chapel",
+        "related_places": {
+          "children": [
+            {
+              "fsq_id": "4b696954f964a52066a12be3",
+              "name": "The Bark Cafe"
+            }
+          ]
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "5caf45df4940bc002cb21622",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 3876,
+        "geocodes": {
+          "main": {
+            "latitude": 1.36031,
+            "longitude": 103.989778
+          },
+          "roof": {
+            "latitude": 1.36031,
+            "longitude": 103.989778
+          }
+        },
+        "link": "/v3/places/5caf45df4940bc002cb21622",
+        "location": {
+          "address": "Jewel Changi Airport",
+          "country": "SG",
+          "cross_street": "78 Airport Boulevard",
+          "formatted_address": "Jewel Changi Airport (78 Airport Boulevard), 819666",
+          "locality": "Singapore",
+          "neighborhood": [
+            "Changi"
+          ],
+          "post_town": "Changi",
+          "postcode": "819666"
+        },
+        "name": "Shaw Theatres",
+        "related_places": {
+          "parent": {
+            "fsq_id": "5aae65de46e1b60bae744790",
+            "name": "Jewel Changi Airport"
+          },
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4ca42934554b236a9c182d48",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 3408,
+        "geocodes": {
+          "main": {
+            "latitude": 1.356352,
+            "longitude": 103.98597
+          },
+          "roof": {
+            "latitude": 1.356352,
+            "longitude": 103.98597
+          }
+        },
+        "link": "/v3/places/4ca42934554b236a9c182d48",
+        "location": {
+          "address": "Level 4, Terminal 3, Changi Airport",
+          "address_extended": "Level 4, Terminal 3",
+          "country": "SG",
+          "cross_street": "65 Airport Blvd",
+          "formatted_address": "Level 4, Terminal 3, Changi Airport (65 Airport Blvd), 819663",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "819663"
+        },
+        "name": "Changi Aviation Gallery",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4d06099d9d33a14361fcc378",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 509,
+        "geocodes": {
+          "main": {
+            "latitude": 1.351804,
+            "longitude": 103.957646
+          },
+          "roof": {
+            "latitude": 1.351804,
+            "longitude": 103.957646
+          }
+        },
+        "link": "/v3/places/4d06099d9d33a14361fcc378",
+        "location": {
+          "address": "",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "520000",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "520000"
+        },
+        "name": "Movie",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058814f964a5207fb022e3",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1230,
+        "geocodes": {
+          "main": {
+            "latitude": 1.352261,
+            "longitude": 103.944641
+          }
+        },
+        "link": "/v3/places/4b058814f964a5207fb022e3",
+        "location": {
+          "address": "Tampines Mall",
+          "country": "SG",
+          "cross_street": "#04-17/18",
+          "formatted_address": "Tampines Mall (#04-17/18), 529510",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "529510"
+        },
+        "name": "Golden Village",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4b058816f964a520f0b022e3",
+            "name": "Aussino - Tampines Mall"
+          },
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4de4ee62d4c0704405a6455e",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 865,
+        "geocodes": {
+          "main": {
+            "latitude": 1.355843,
+            "longitude": 103.962704
+          },
+          "roof": {
+            "latitude": 1.355843,
+            "longitude": 103.962704
+          }
+        },
+        "link": "/v3/places/4de4ee62d4c0704405a6455e",
+        "location": {
+          "address": "Blk 361",
+          "country": "SG",
+          "cross_street": "Tampines Street 34",
+          "formatted_address": "Blk 361 (Tampines Street 34), 520361",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "520361"
+        },
+        "name": "Frsh's Homemade Movie Theatre",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4ca6abe0931bb60c661896e2",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1268,
+        "geocodes": {
+          "main": {
+            "latitude": 1.352513,
+            "longitude": 103.943997
+          },
+          "roof": {
+            "latitude": 1.352513,
+            "longitude": 103.943997
+          }
+        },
+        "link": "/v3/places/4ca6abe0931bb60c661896e2",
+        "location": {
+          "address": "2 Tampines Central 5",
+          "address_extended": "#05-09",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "2 Tampines Central 5, 529509",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "529509"
+        },
+        "name": "Century Cineplex",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "5b8a9545bcbf7a002ceafae2",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1327,
+        "geocodes": {
+          "main": {
+            "latitude": 1.352318,
+            "longitude": 103.943709
+          }
+        },
+        "link": "/v3/places/5b8a9545bcbf7a002ceafae2",
+        "location": {
+          "address": "2 Tampines Central 5",
+          "address_extended": "#05-11",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "2 Tampines Central 5, 529509",
+          "locality": "Tampines",
+          "post_town": "Tampines",
+          "postcode": "529509"
+        },
+        "name": "Filmgarde",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "5b17a4596336be002c5fc3ef",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1332,
+        "geocodes": {
+          "main": {
+            "latitude": 1.35233,
+            "longitude": 103.943759
+          },
+          "roof": {
+            "latitude": 1.35233,
+            "longitude": 103.943759
+          }
+        },
+        "link": "/v3/places/5b17a4596336be002c5fc3ef",
+        "location": {
+          "address": "2 Tampines Central 5",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "2 Tampines Central 5, 529509",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "529509"
+        },
+        "name": "Filmgarde Cineplexes",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4b2de4e9f964a520eedb24e3",
+            "name": "Century Square"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4bee6f932c082d7f586c3042",
+        "categories": [
+          {
+            "id": 10006,
+            "name": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1965,
+        "geocodes": {
+          "main": {
+            "latitude": 1.344548,
+            "longitude": 103.94158
+          },
+          "roof": {
+            "latitude": 1.344548,
+            "longitude": 103.94158
+          }
+        },
+        "link": "/v3/places/4bee6f932c082d7f586c3042",
+        "location": {
+          "address": "1A Tampines St 92",
+          "address_extended": "#03-01",
+          "country": "SG",
+          "cross_street": "SAFRA Tampines",
+          "formatted_address": "1A Tampines St 92 (SAFRA Tampines), 528882",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "528882"
+        },
+        "name": "Orchid Bowl",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4b38b30bf964a520844f25e3",
+            "name": "Safra Tampines"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "5889ee2f1d21ba2ed61990b2",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1629,
+        "geocodes": {
+          "main": {
+            "latitude": 1.353697,
+            "longitude": 103.940607
+          },
+          "roof": {
+            "latitude": 1.353697,
+            "longitude": 103.940607
+          }
+        },
+        "link": "/v3/places/5889ee2f1d21ba2ed61990b2",
+        "location": {
+          "address": "Our Tampines Hub Level B1",
+          "country": "SG",
+          "cross_street": "51 Tampines Ave 4",
+          "formatted_address": "Our Tampines Hub Level B1 (51 Tampines Ave 4), 528523",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "528523"
+        },
+        "name": "Play Nation",
+        "related_places": {
+          "parent": {
+            "fsq_id": "574bcba8498e74364624edc4",
+            "name": "Guzman Y Gomez - Our Tampines Hub"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4db121a14b22ba776d7c7fe7",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2066,
+        "geocodes": {
+          "main": {
+            "latitude": 1.372579,
+            "longitude": 103.962689
+          },
+          "roof": {
+            "latitude": 1.372579,
+            "longitude": 103.962689
+          }
+        },
+        "link": "/v3/places/4db121a14b22ba776d7c7fe7",
+        "location": {
+          "address": "Pasir ris st 21",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "Pasir ris st 21, 518968",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "518968"
+        },
+        "name": "Rest & Relax",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4ca82f4444a8224b246e1540",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2273,
+        "geocodes": {
+          "main": {
+            "latitude": 1.37594,
+            "longitude": 103.955527
+          },
+          "roof": {
+            "latitude": 1.37594,
+            "longitude": 103.955527
+          }
+        },
+        "link": "/v3/places/4ca82f4444a8224b246e1540",
+        "location": {
+          "address": "1 Pasir Ris Cl",
+          "address_extended": "Level 4, E!hub",
+          "country": "SG",
+          "cross_street": "1 Pasir Ris Cl",
+          "formatted_address": "1 Pasir Ris Cl (1 Pasir Ris Cl), 519599",
+          "locality": "Singapore",
+          "neighborhood": [
+            "Pasir Ris"
+          ],
+          "post_town": "Tampines",
+          "postcode": "519599"
+        },
+        "name": "Cathay Cineplex",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4cb6db7b589f236a324e3a3d",
+            "name": "Swensens - Ehub,Downtown East"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4c3ec68a80bc20a1ae7cab58",
+        "categories": [
+          {
+            "id": 10006,
+            "name": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4699,
+        "geocodes": {
+          "main": {
+            "latitude": 1.317795,
+            "longitude": 103.97407
+          },
+          "roof": {
+            "latitude": 1.317795,
+            "longitude": 103.97407
+          }
+        },
+        "link": "/v3/places/4c3ec68a80bc20a1ae7cab58",
+        "location": {
+          "address": "10th Changi Coast Walk",
+          "country": "SG",
+          "formatted_address": "10th Changi Coast Walk, 499739",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "499739"
+        },
+        "name": "Bowling, Nsrcc",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4e630270b993678bb6bf0930",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2260,
+        "geocodes": {
+          "main": {
+            "latitude": 1.375913,
+            "longitude": 103.954069
+          }
+        },
+        "link": "/v3/places/4e630270b993678bb6bf0930",
+        "location": {
+          "address": "1 Pasir Ris Cl",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "1 Pasir Ris Cl, 510000",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "510000"
+        },
+        "name": "Funk Balls, E!Hub Downtown East",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4cb6db7b589f236a324e3a3d",
+            "name": "Swensens - Ehub,Downtown East"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4f2174bae4b03e01099066e2",
+        "categories": [
+          {
+            "id": 10006,
+            "name": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2448,
+        "geocodes": {
+          "main": {
+            "latitude": 1.35455,
+            "longitude": 103.933132
+          },
+          "roof": {
+            "latitude": 1.35455,
+            "longitude": 103.933132
+          }
+        },
+        "link": "/v3/places/4f2174bae4b03e01099066e2",
+        "location": {
+          "address": "Tampines St 82",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "Tampines St 82, 520000",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "520000"
+        },
+        "name": "Abc Bowling Alley",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4d3199358c42a1cd330be05d",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2468,
+        "geocodes": {
+          "main": {
+            "latitude": 1.354533,
+            "longitude": 103.933066
+          },
+          "roof": {
+            "latitude": 1.354533,
+            "longitude": 103.933066
+          }
+        },
+        "link": "/v3/places/4d3199358c42a1cd330be05d",
+        "location": {
+          "address": "Tampines St 84",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "Tampines St 84, 520000",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "520000"
+        },
+        "name": "Dyn's Game Corner",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4be6e7f9bcef2d7f239205e5",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2826,
+        "geocodes": {
+          "main": {
+            "latitude": 1.331323,
+            "longitude": 103.947417
+          },
+          "roof": {
+            "latitude": 1.331323,
+            "longitude": 103.947417
+          }
+        },
+        "link": "/v3/places/4be6e7f9bcef2d7f239205e5",
+        "location": {
+          "address": "Bedok Rd.",
+          "country": "SG",
+          "cross_street": "Simpang Bedok",
+          "formatted_address": "Bedok Rd. (Simpang Bedok), 469527",
+          "locality": "Singapore",
+          "post_town": "Upper East Coast",
+          "postcode": "469527"
+        },
+        "name": "Cross Fire Lan Gaming Club",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4dcfd767b0fb25f6e36648c6",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 3616,
+        "geocodes": {
+          "main": {
+            "latitude": 1.357471,
+            "longitude": 103.987711
+          },
+          "roof": {
+            "latitude": 1.357471,
+            "longitude": 103.987711
+          }
+        },
+        "link": "/v3/places/4dcfd767b0fb25f6e36648c6",
+        "location": {
+          "address": "65 Airport Boulevard, Changi Airport Terminal 3",
+          "address_extended": "#B2-23",
+          "country": "SG",
+          "cross_street": "65 Airport Blvd",
+          "formatted_address": "65 Airport Boulevard, Changi Airport Terminal 3 (65 Airport Blvd), 819663",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "819663"
+        },
+        "name": "Zone X - T3",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "5a07a3bf0531e824a0485d39",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 3753,
+        "geocodes": {
+          "main": {
+            "latitude": 1.338501,
+            "longitude": 103.984243
+          },
+          "roof": {
+            "latitude": 1.338501,
+            "longitude": 103.984243
+          }
+        },
+        "link": "/v3/places/5a07a3bf0531e824a0485d39",
+        "location": {
+          "address": "Terminal 4 Singapore Changi Airport",
+          "country": "SG",
+          "cross_street": "10 Airport Boulevard",
+          "formatted_address": "Terminal 4 Singapore Changi Airport (10 Airport Boulevard), 819665",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "819665"
+        },
+        "name": "Peranakan Gallery",
+        "related_places": {
+          "parent": {
+            "fsq_id": "5a18b4302347247759601dd0",
+            "name": "T4 Transit Mall"
+          }
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4cfa635f2d80a143184c44d8",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4331,
+        "geocodes": {
+          "main": {
+            "latitude": 1.326155,
+            "longitude": 103.929577
+          },
+          "roof": {
+            "latitude": 1.326155,
+            "longitude": 103.929577
+          }
+        },
+        "link": "/v3/places/4cfa635f2d80a143184c44d8",
+        "location": {
+          "address": "204 Bedok North St 1",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "204 Bedok North St 1, 469661",
+          "locality": "Singapore",
+          "post_town": "Upper East Coast",
+          "postcode": "469661"
+        },
+        "name": "Dota Cgm",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "b7e5783b47ed415add55bc06",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1184,
+        "geocodes": {
+          "main": {
+            "latitude": 1.35264,
+            "longitude": 103.944954
+          },
+          "roof": {
+            "latitude": 1.35264,
+            "longitude": 103.944954
+          }
+        },
+        "link": "/v3/places/b7e5783b47ed415add55bc06",
+        "location": {
+          "address": "2 Tampines Central 5",
+          "address_extended": "#01-k5",
+          "country": "SG",
+          "formatted_address": "2 Tampines Central 5, 529509",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "529509"
+        },
+        "name": "Golden Village",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "7047a3d15ba849d77e77761f",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1437,
+        "geocodes": {
+          "main": {
+            "latitude": 1.342846,
+            "longitude": 103.953033
+          },
+          "roof": {
+            "latitude": 1.342846,
+            "longitude": 103.953033
+          }
+        },
+        "link": "/v3/places/7047a3d15ba849d77e77761f",
+        "location": {
+          "address": "3 Simei St 6",
+          "address_extended": "#06-01 Eastpoint Mall",
+          "country": "SG",
+          "formatted_address": "3 Simei St 6, 528833",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "528833"
+        },
+        "name": "Golden Village Entertainment",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "51b88df96e8d4678ce3dbf3f",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2188,
+        "geocodes": {
+          "main": {
+            "latitude": 1.362168,
+            "longitude": 103.973773
+          },
+          "roof": {
+            "latitude": 1.362168,
+            "longitude": 103.973773
+          }
+        },
+        "link": "/v3/places/51b88df96e8d4678ce3dbf3f",
+        "location": {
+          "address": "1000 Upper Changi Rd North",
+          "country": "SG",
+          "formatted_address": "1000 Upper Changi Rd North, 507707",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "507707"
+        },
+        "name": "Changi Museum",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "f9a3742ea7bb45eef61b7310",
+        "categories": [
+          {
+            "id": 10006,
+            "name": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2239,
+        "geocodes": {
+          "main": {
+            "latitude": 1.374404,
+            "longitude": 103.947959
+          }
+        },
+        "link": "/v3/places/f9a3742ea7bb45eef61b7310",
+        "location": {
+          "address": "1 Pasir Ris CI",
+          "country": "SG",
+          "formatted_address": "1 Pasir Ris CI, 519599",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "519599"
+        },
+        "name": "Alpha Bowling Pro-Shop",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "a314c6b0a4cd479e8923f088",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          },
+          {
+            "id": 13044,
+            "name": "Frozen Yogurt Shop",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/frozenyogurt_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2425,
+        "geocodes": {
+          "main": {
+            "latitude": 1.377428,
+            "longitude": 103.955415
+          },
+          "roof": {
+            "latitude": 1.377428,
+            "longitude": 103.955415
+          }
+        },
+        "link": "/v3/places/a314c6b0a4cd479e8923f088",
+        "location": {
+          "address": "1 Pasir Ris Cl",
+          "address_extended": "#02-102 eHub! @ Downtown East",
+          "country": "SG",
+          "formatted_address": "1 Pasir Ris Cl, 519599",
+          "locality": "Singapore",
+          "post_town": "Tampines",
+          "postcode": "519599"
+        },
+        "name": "Yoguru - Ehub!, Downtown East",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "02876a99a1684c3f8e410ce6",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4113,
+        "geocodes": {
+          "main": {
+            "latitude": 1.326227,
+            "longitude": 103.932665
+          },
+          "roof": {
+            "latitude": 1.326227,
+            "longitude": 103.932665
+          }
+        },
+        "link": "/v3/places/02876a99a1684c3f8e410ce6",
+        "location": {
+          "address": "213 Bedok North St 1",
+          "address_extended": "#01-101",
+          "country": "SG",
+          "formatted_address": "213 Bedok North St 1, 460213",
+          "locality": "Singapore",
+          "post_town": "Upper East Coast",
+          "postcode": "460213"
+        },
+        "name": "Buy Sell Station",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "98d097c2099846d46e2f973c",
+        "categories": [
+          {
+            "id": 10006,
+            "name": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4478,
+        "geocodes": {
+          "main": {
+            "latitude": 1.389851,
+            "longitude": 103.976445
+          },
+          "roof": {
+            "latitude": 1.389851,
+            "longitude": 103.976445
+          }
+        },
+        "link": "/v3/places/98d097c2099846d46e2f973c",
+        "location": {
+          "address": "350 Cranwell Rd",
+          "country": "SG",
+          "formatted_address": "350 Cranwell Rd, 509864",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "509864"
+        },
+        "name": "Bowler's Workshop",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "fdf5b014ec504bb1c31ffcdb",
+        "categories": [
+          {
+            "id": 10006,
+            "name": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4679,
+        "geocodes": {
+          "main": {
+            "latitude": 1.322233,
+            "longitude": 103.9809
+          }
+        },
+        "link": "/v3/places/fdf5b014ec504bb1c31ffcdb",
+        "location": {
+          "address": "10 Changi Coast Walk SAFRA RESORT",
+          "country": "SG",
+          "formatted_address": "10 Changi Coast Walk SAFRA RESORT, 499739",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "499739"
+        },
+        "name": "W2 Bowling Pro-Shop",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "36ed5de6b8924476d07aae86",
+        "categories": [
+          {
+            "id": 10006,
+            "name": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4710,
+        "geocodes": {
+          "main": {
+            "latitude": 1.317832,
+            "longitude": 103.974449
+          },
+          "roof": {
+            "latitude": 1.317832,
+            "longitude": 103.974449
+          }
+        },
+        "link": "/v3/places/36ed5de6b8924476d07aae86",
+        "location": {
+          "address": "10 Changi Coast Walk Safra Resort Bowl, NSRCC",
+          "country": "SG",
+          "formatted_address": "10 Changi Coast Walk Safra Resort Bowl, NSRCC, 499739",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "499739"
+        },
+        "name": "Eastern Pro-Shop",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "b68dbf0aa40b4f2b60163bcb",
+        "categories": [
+          {
+            "id": 10006,
+            "name": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4718,
+        "geocodes": {
+          "main": {
+            "latitude": 1.317667,
+            "longitude": 103.974277
+          },
+          "roof": {
+            "latitude": 1.317667,
+            "longitude": 103.974277
+          }
+        },
+        "link": "/v3/places/b68dbf0aa40b4f2b60163bcb",
+        "location": {
+          "address": "10 Changi Coast Walk, Safra Resort",
+          "country": "SG",
+          "formatted_address": "10 Changi Coast Walk, Safra Resort, 499739",
+          "locality": "Singapore",
+          "post_town": "Changi",
+          "postcode": "499739"
+        },
+        "name": "Cathay Bowl",
+        "related_places": {}
+      },{
+        "fsq_id": "4b058810f964a5206baf22e3",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 509,
+        "geocodes": {
+          "main": {
+            "latitude": 1.332469,
+            "longitude": 103.67884
+          },
+          "roof": {
+            "latitude": 1.332469,
+            "longitude": 103.67884
+          }
+        },
+        "link": "/v3/places/4b058810f964a5206baf22e3",
+        "location": {
+          "address": "510 Upper Jurong Rd",
+          "country": "SG",
+          "formatted_address": "510 Upper Jurong Rd, 638365",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "638365"
+        },
+        "name": "Singapore Discovery Centre",
+        "related_places": {
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4c872d9ad92ea09333327472",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 456,
+        "geocodes": {
+          "main": {
+            "latitude": 1.331789,
+            "longitude": 103.67692
+          },
+          "roof": {
+            "latitude": 1.331789,
+            "longitude": 103.67692
+          }
+        },
+        "link": "/v3/places/4c872d9ad92ea09333327472",
+        "location": {
+          "address": "520 Upper Jurong Rd",
+          "address_extended": "#02-25",
+          "country": "SG",
+          "formatted_address": "520 Upper Jurong Rd, 638367",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "638367"
+        },
+        "name": "Army Museum of Singapore",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b38adedf964a5205c4f25e3",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 3430,
+        "geocodes": {
+          "main": {
+            "latitude": 1.34014,
+            "longitude": 103.706335
+          },
+          "roof": {
+            "latitude": 1.34014,
+            "longitude": 103.706335
+          }
+        },
+        "link": "/v3/places/4b38adedf964a5205c4f25e3",
+        "location": {
+          "address": "1 Jurong West Central 2",
+          "address_extended": "#03-25B/26",
+          "country": "SG",
+          "cross_street": "1 Jurong West Central 2",
+          "formatted_address": "1 Jurong West Central 2 (1 Jurong West Central 2), 648886",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "648886"
+        },
+        "name": "Golden Village",
+        "related_places": {
+          "parent": {
+            "fsq_id": "4b058817f964a5203eb122e3",
+            "name": "Jurong Point"
+          },
+          "children": []
+        },
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4b058810f964a52068af22e3",
+        "categories": [
+          {
+            "id": 10030,
+            "name": "History Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_history_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 1901,
+        "geocodes": {
+          "main": {
+            "latitude": 1.343782,
+            "longitude": 103.684083
+          },
+          "roof": {
+            "latitude": 1.343782,
+            "longitude": 103.684083
+          }
+        },
+        "link": "/v3/places/4b058810f964a52068af22e3",
+        "location": {
+          "address": "12 Nanyang Dr",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "12 Nanyang Dr, 637721",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "637721"
+        },
+        "name": "Chinese Heritage Centre",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4c6687e8aebea593b24c73d0",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4237,
+        "geocodes": {
+          "main": {
+            "latitude": 1.345742,
+            "longitude": 103.711796
+          },
+          "roof": {
+            "latitude": 1.345742,
+            "longitude": 103.711796
+          }
+        },
+        "link": "/v3/places/4c6687e8aebea593b24c73d0",
+        "location": {
+          "address": "",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "640000",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "640000"
+        },
+        "name": "Amusement Leisure Club",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4d6e700524b56ea8e12b00fc",
+        "categories": [
+          {
+            "id": 10018,
+            "name": "Gaming Cafe",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gamingcafe_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4265,
+        "geocodes": {
+          "main": {
+            "latitude": 1.346008,
+            "longitude": 103.71212
+          },
+          "roof": {
+            "latitude": 1.346008,
+            "longitude": 103.71212
+          }
+        },
+        "link": "/v3/places/4d6e700524b56ea8e12b00fc",
+        "location": {
+          "address": "Boon Lay Place Blk 221",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "Boon Lay Place Blk 221, 640221",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "640221"
+        },
+        "name": "Boon Lay Amusement Leisure Club",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "4d61efc3d7206ea8200706f2",
+        "categories": [
+          {
+            "id": 10027,
+            "name": "Museum",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 4793,
+        "geocodes": {
+          "main": {
+            "latitude": 1.312655,
+            "longitude": 103.718537
+          },
+          "roof": {
+            "latitude": 1.312655,
+            "longitude": 103.718537
+          }
+        },
+        "link": "/v3/places/4d61efc3d7206ea8200706f2",
+        "location": {
+          "address": "32 Jurong Port Rd",
+          "country": "SG",
+          "cross_street": "",
+          "formatted_address": "32 Jurong Port Rd, 619104",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "619104"
+        },
+        "name": "Heritage Conservation Centre",
+        "related_places": {},
+        "timezone": "Asia/Singapore"
+      },
+      {
+        "fsq_id": "a2549ca9e781418c648d9df1",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 2297,
+        "geocodes": {
+          "main": {
+            "latitude": 1.307479,
+            "longitude": 103.67398
+          },
+          "roof": {
+            "latitude": 1.307479,
+            "longitude": 103.67398
+          }
+        },
+        "link": "/v3/places/a2549ca9e781418c648d9df1",
+        "location": {
+          "address": "Southeast Asia SABIC Innovative Plastics 23 Benoi Rd",
+          "country": "SG",
+          "formatted_address": "Southeast Asia SABIC Innovative Plastics 23 Benoi Rd, 629895",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "629895"
+        },
+        "name": "Ge Plastics Singapore P/L",
+        "related_places": {}
+      },
+      {
+        "fsq_id": "ad330d3a82044e39699b1764",
+        "categories": [
+          {
+            "id": 10024,
+            "name": "Movie Theater",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+              "suffix": ".png"
+            }
+          }
+        ],
+        "chains": [],
+        "distance": 3124,
+        "geocodes": {
+          "main": {
+            "latitude": 1.348469,
+            "longitude": 103.697254
+          }
+        },
+        "link": "/v3/places/ad330d3a82044e39699b1764",
+        "location": {
+          "address": "762 Jurong West St 75",
+          "address_extended": "#01-252 Gek Poh Shopping Centre",
+          "country": "SG",
+          "formatted_address": "762 Jurong West St 75, 640762",
+          "locality": "Singapore",
+          "post_town": "Jurong",
+          "postcode": "640762"
+        },
+        "name": "New Power Laser",
+        "related_places": {}
       }
+      
     ]
   }
