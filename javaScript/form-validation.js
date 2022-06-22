@@ -20,16 +20,21 @@ document.querySelector('#form-btn')
         isMessageTooShort = true
     }
 
-    let errorString = "";
+
     if (isNameEmpty){
-        // errorString += "<li>Name is required</li>"
         document.querySelector('#nameError').innerHTML = "Name is required"
+    }else{
+        document.querySelector('#nameError').innerHTML = ""
     }
     if (isEmailInvalid){
         document.querySelector('#emailError').innerHTML = "Please provide a valid email address"
+    }else{
+        document.querySelector('#emailError').innerHTML = ""
     }
     if (isMessageTooShort){
         document.querySelector('#messageError').innerHTML = "Your message must be at least 5 characters long"
+    }else{
+        document.querySelector('#messageError').innerHTML = ""
     }
 
 })

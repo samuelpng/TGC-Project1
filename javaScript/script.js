@@ -247,12 +247,12 @@ window.addEventListener('DOMContentLoaded', async function () {
                         let cardElement = document.createElement('div')
                         cardElement.className="search-card";
                         cardElement.innerHTML=
-                        `<div class="card" style="width: 18rem;">
+                        `<div class="card" style="width: 15rem;">
                         <!--<img src="..." class="card-img-top" alt="...">-->
                         <div class="card-body">
                           <h5 class="card-title">${eachResult.SEARCHVAL}</h5>
                           <p class="card-text">${eachResult.ADDRESS}</p>
-                          <a href="#" id="go-btn" class="btn btn-warning">Go</a>
+                        <!--  <a href="#" id="go-btn" class="btn btn-warning">Go</a>-->
                         </div>
                       </div>`
                         document.querySelector("#results").innerHTML = "";

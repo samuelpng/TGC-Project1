@@ -259,7 +259,15 @@
     z-index: 314159;
     height:600px;
     width:400px;
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
+    background: linear-gradient(
+    to bottom,
+    rgb(249, 239, 125) 0%,
+    rgb(249, 239, 125) 20%,
+    beige 60%,
+    beige 100%
+    );
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(225,233,148,1) 100%); */
     opacity:0.9;
     bottom:50px;
     right:50px;
@@ -417,8 +425,9 @@ div.error {
     }
 
     #card-results{
-        max-height:80vh
+        max-height:80vh;
     }
+    
     #form-icon{
         position: absolute;
         z-index: 314159;
