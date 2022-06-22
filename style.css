@@ -439,6 +439,13 @@ div.error {
         z-index: 314156
     }    
 
+    #search-txt {
+        line-height: 30px;
+        outline: none;
+        border:none;
+        background-color: transparent;
+        width: 175px
+    }
 
     #search-container{
         background-color: white;
