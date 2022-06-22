@@ -1,5 +1,7 @@
 # BoredGoWhere
 
+<img src="./pictures/responsively-map.png" style="display: block">
+
 The live demo of the website can be accessed [here](https://main--boredgowhere.netlify.app/)
 
 ## 1. Project Summary
@@ -69,7 +71,8 @@ Content
 <br>
 
 ### Skeleton
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+<img src="./pictures/boredgowhere-skeleton.png" style="display: block">
+<br>
 
 ## 3. Surface
 **colours**: To give a fun and energetic vibe, warm colours are used. The colour scheme of the different gradients of yellow is used to achive this goal. This is with exception to the landing page video, which has to be contrasted with the yellow theme above it.
@@ -99,7 +102,9 @@ The web application pnly shows user's locations, user's searched location and ma
 The test cases can be found [here](https://github.com/samuelpng/TGC-Project1/blob/main/BoredGoWhere-Test%20Case.pdf)
 
 ### Testing for mobile responsiveness.
-Testing was done using DevTools for iPhone 12 Pro, iPad and Generic Laptop. 
+Testing was done using responsively for iPhone X, iPad and Generic Laptop. 
+Image for mobile responsiveness testing of map page can be found above and the testing for landing page is as shown below
+<img src="./pictures/responsively-landing.png" style="display: block">
 
 ## 7. Technologies used 
 
@@ -114,7 +119,7 @@ Testing was done using DevTools for iPhone 12 Pro, iPad and Generic Laptop.
 | [Netlify](https://www.netlify.com/)| Deployment of website
 
 ## 8. Deployment
-The web application is hosted on [Netlify](https://62b17b9893f7ca05c1b62498--boredgowhere.netlify.app/)
+The web application is hosted on [Netlify](https://main--boredgowhere.netlify.app/)
 
 Icons and images
 
