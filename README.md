@@ -1,6 +1,6 @@
 # BoredGoWhere
 
-The live demo of the website can be accessed here
+The live demo of the website can be accessed [here](https://main--boredgowhere.netlify.app/)
 
 ## 1. Project Summary
 
@@ -64,6 +64,10 @@ Content
 **Non-functional Requirements**
 * The app should be mobile-responsive, so that users can use it on the go
 
+### Structure
+<img src="./pictures/boredgowhere-structure.png" style="display: block">
+<br>
+
 ### Skeleton
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -75,18 +79,27 @@ Content
 **Icons and Markers**: The colours of the search markers and icon markers are selected to match the colour scheme of the web application.
 
 ## 4. Features
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Features | Descriptions
+-------- | -------------
+Generate entertainment locations | This feature generates entertainment activity locations on the map based on five categories - Escape Room, Bowling Alley, Gaming cafe, Movie Theater and Museums)
+Search based on location address | This feature allows users to search for a location based on address or postal code
+Show current location of user | This feature allows users to see their current location on their map and zoom into it.
+Contact / Suggestion form | This feature allows users to submit a message to the database. The form has validation which would prompt users when their input is invalid upon submission. However, this feature is still a work in progress as there is no backend to handle the submission request.
 
 ## 5. Limitations and future implementations
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Limitations | Future Implementations to Resolve Limitations
+----------- | -------------
+Popup and search cards only shows name and address of locations | Find an API that allows more relevant information to be grabbed
+There is no backedn server to store messages from users | Create a database that is able to store user messages. | 
+The web application pnly shows user's locations, user's searched location and markers for each entertainment category. With a routing function, more value can be added to the users|Create a routing location that allows users to plot from their selected starting location to their selected entertainment location.
 
 ## 6. Testing
 
 ### Test cases
-The test cases can be found [here](./BoredGoWhere-Test Case.pdf)
+The test cases can be found [here](https://github.com/samuelpng/TGC-Project1/blob/main/BoredGoWhere-Test%20Case.pdf)
 
 ### Testing for mobile responsiveness.
-!!!!!!!!!!!!!!!!!!!!
+Testing was done using DevTools for iPhone 12 Pro, iPad and Generic Laptop. 
 
 ## 7. Technologies used 
 
